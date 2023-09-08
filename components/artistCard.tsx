@@ -8,7 +8,7 @@ interface Props {
 
 const ArtistCard: React.FC<Props> = ({ name, url }) => {
   return (
-    <div className="mr-7 shrink-0">
+    <div className="mr-4 shrink-0">
       <div>
         <Image
           width={80}

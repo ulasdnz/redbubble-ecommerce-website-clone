@@ -102,8 +102,12 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className="w-full h-[54px] flex justify-between items-center px-8 search_link_items">
-        <div className="cursor-pointer search_popup_link_item">
+
+      <div
+        className="w-full h-[54px] max-[1157px]:h-[80px] flex justify-between items-center px-8 search_link_items overflow-auto content-box
+       "
+      >
+        <div className="cursor-pointer search_popup_link_item mr-4 shrink-0">
           Clothing
           <div className="absolute">
             <div className="p-4"></div>
@@ -124,7 +128,7 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="cursor-pointer search_popup_link_item">
+        <div className="cursor-pointer search_popup_link_item mr-4 shrink-0">
           Stickers
           <div className="absolute">
             <div className="p-4"></div>
@@ -135,7 +139,7 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="cursor-pointer search_popup_link_item">
+        <div className="cursor-pointer search_popup_link_item mr-4 shrink-0">
           Phone Cases
           <div className="absolute">
             <div className="p-4"></div>
@@ -146,7 +150,7 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="cursor-pointer search_popup_link_item">
+        <div className="cursor-pointer search_popup_link_item mr-4 shrink-0">
           Wall Art
           <div className="absolute">
             <div className="p-4"></div>
@@ -168,7 +172,7 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="cursor-pointer search_popup_link_item">
+        <div className="cursor-pointer search_popup_link_item mr-4 shrink-0">
           Home & Living
           <div className="absolute">
             <div className="p-4"></div>
@@ -195,7 +199,7 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="cursor-pointer search_popup_link_item">
+        <div className="cursor-pointer search_popup_link_item mr-4 shrink-0">
           Kids & Babies
           <div className="absolute">
             <div className="p-4"></div>
@@ -214,7 +218,7 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="cursor-pointer search_popup_link_item">
+        <div className="cursor-pointer search_popup_link_item mr-4 shrink-0">
           Pets
           <div className="absolute">
             <div className="p-4"></div>
@@ -230,7 +234,7 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="cursor-pointer search_popup_link_item">
+        <div className="cursor-pointer search_popup_link_item mr-4 shrink-0">
           Accessories
           <div className="absolute">
             <div className="p-4"></div>
@@ -257,7 +261,7 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="cursor-pointer search_popup_link_item">
+        <div className="cursor-pointer search_popup_link_item mr-4 shrink-0">
           Stationery & Office
           <div className="absolute">
             <div className="p-4"></div>
@@ -275,7 +279,7 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="cursor-pointer search_popup_link_item">
+        <div className="cursor-pointer search_popup_link_item mr-4 shrink-0">
           Gifts
           <div className="absolute">
             <div className="p-4"></div>
@@ -296,9 +300,9 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="cursor-pointer search_popup_link_item">
+        <div className="cursor-pointer search_popup_link_item mr-4 shrink-0">
           Explore designs
-          <div className="absolute" style={{right:"50px"}}>
+          <div className="absolute" style={{ right: "50px" }}>
             <div className="p-4"></div>
             <HeaderHoverCard
               isLastOne={true}

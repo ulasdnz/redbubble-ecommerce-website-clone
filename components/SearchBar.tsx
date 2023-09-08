@@ -4,7 +4,7 @@ import styles from "./search.module.css";
 import ArtistCard from "./artistCard";
 import PopupCard from "./popupCard";
 import PopupCardSm from "./popupCard_sm";
-import UseClickOutside from "../hooks/useOutsideClick"
+import UseClickOutside from "../hooks/useOutsideClick";
 
 const SearchBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -59,7 +59,7 @@ const SearchBar = () => {
 
   return (
     <>
-      <div className="mr-6 ">
+      <div className="mr-5 ">
         <div className={styles.loop}>
           <input
             id="search"
@@ -73,8 +73,7 @@ const SearchBar = () => {
           ></input>
           <div className="absolute w-6 h-6 z-30 right-5 top-[18px]">
             <span>
-              <span
-                style={{color:"currentcolor"}} >
+              <span style={{ color: "currentcolor" }}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -93,7 +92,10 @@ const SearchBar = () => {
             ></div>
           ) : null}
           {isOpen ? (
-            <div ref = {popupRef} className="py-2 search_popup h-[780px] w-full  absolute border-0 text-[#19124f]">
+            <div
+              ref={popupRef}
+              className="py-2 mt-1 bg-white search_popup h-[780px] w-full z-[100000] absolute border-0 text-[#19124f]"
+            >
               <div className="pt-6 flex justify-between ">
                 <div className="flex-[flex:1_0_auto] shrink-0 ">
                   <div className="flex flex-col   justify-center px-6">
