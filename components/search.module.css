@@ -1,0 +1,43 @@
+.loop {
+  padding: 2px;
+  position: relative;
+  background: linear-gradient(
+    90deg,
+    #ff596f,
+    #e41421,
+    #ed207b,
+    #6551cc,
+    #47cccc,
+    #99ccbb,
+    #ff596f
+  );
+  border: 2px;
+  content: "";
+  background-size: 50% 100%;
+  background-repeat: repeat-x;
+  animation: anim linear 3s infinite;
+  width: 100%;
+  min-height: 56px !important;
+  border-radius: 5px;
+}
+
+@keyframes anim {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.loop:focus-within {
+  padding: 0;
+  outline-width: 4px;
+  outline-style: solid;
+  outline-color: #AFA3F2;
+  margin-top: 3px;
+}
+

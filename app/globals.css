@@ -16,12 +16,143 @@
   }
 }
 
+html,
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Inter, Arial, sans-serif;
+}
+
+.search_popup {
+  box-shadow: 0 8px 10px -5px rgba(0, 0, 0, 0.2),
+    0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid transparent;
+  border-radius: 10px;
+}
+
+.searchbar_placeholder {
+  position: relative;
+}
+
+.search_popup_caruosel_arrow {
+  box-shadow: 0 3px 4px -1px rgba(0, 0, 0, 0.15),
+    0 5px 10px 0 rgba(0, 0, 0, 0.1), 0 1px 12px 0 rgba(0, 0, 0, 0.1);
+}
+
+.search_link_items{
+  border-bottom: 2px solid #F2F2F6;
+}
+
+.search_popup_hover_card {
+  display: none;
+  opacity: 0;
+  box-shadow: 0 8px 10px -5px rgba(0, 0, 0, 0.2),
+    0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.1);
+}
+.search_popup_link_item:hover .search_popup_hover_card {
+  display: block ;
+  opacity: 1;
+}
+
+.search_popup_hover_card_items {
+  opacity: 0;
+  transition: opacity 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.search_popup_link_item:hover .search_popup_hover_card_items {
+  opacity: 1;
+}
+
+.header_hover_card_arrow{
+  position: absolute;
+  top:-18px;
+  left: 44px;
+  z-index: 999999999;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid ;
+  border-bottom: 10px solid white;
+}
+
+.searchbar_placeholder::before {
+  content: "Search for Stranger Things fan art";
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  /* top: 40px;
+  opacity: 0; */
+  animation: placeholder 15s infinite;
+}
+@keyframes placeholder {
+  0% {
+    top: 0;
+    opacity: 0;
+    content: "Search for Stranger Things fan art";
+  }
+  1% {
+    top: -40px;
+    opacity: 1;
+    content: "Search for Stranger Things fan art";
+  }
+  32% {
+    top: -40px;
+    opacity: 1;
+    content: "Search for Stranger Things fan art";
+  }
+  33% {
+    top: -60px;
+    opacity: 0;
+    content: "Search for Stranger Things fan art";
+  }
+
+  36% {
+    top: 0;
+    opacity: 0;
+    content: "Discover a most peculiar floral pattern";
+  }
+
+  38% {
+    top: -40px;
+    opacity: 1;
+    content: "Discover a most peculiar floral pattern";
+  }
+  68% {
+    top: -40px;
+    opacity: 1;
+    content: "Discover a most peculiar floral pattern";
+  }
+  69% {
+    top: -60px;
+    opacity: 0;
+    content: "Discover a most peculiar floral pattern";
+  }
+
+  72% {
+    top: 0;
+    opacity: 0;
+    content: "Explore geeky science posters";
+  }
+
+  75% {
+    top: -40px;
+    opacity: 1;
+    content: "Explore geeky science posters";
+  }
+  99% {
+    top: -40px;
+    opacity: 1;
+    content: "Explore geeky science posters";
+  }
+  100% {
+    top: -60px;
+    opacity: 0;
+    content: "Explore geeky science posters";
+  }
+}
+
+.popup:fo {
+  color: red;
 }

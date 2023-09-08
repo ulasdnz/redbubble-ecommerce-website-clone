@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  images: {
+    domains: ["ih0.redbubble.net","d23mnqickg7hnq.cloudfront.net"],
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
