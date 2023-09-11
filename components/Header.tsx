@@ -161,7 +161,7 @@ const Header = () => {
       >
         <div className="cursor-pointer search_popup_link_item mr-4 shrink-0">
           Clothing
-          <div className="absolute">
+          <div className="fixed">
             <div className="p-4"></div>
             <HeaderHoverCard
               isLastOne={false}
@@ -182,7 +182,7 @@ const Header = () => {
 
         <div className="cursor-pointer search_popup_link_item mr-4 shrink-0">
           Stickers
-          <div className="absolute">
+          <div className="fixed">
             <div className="p-4"></div>
             <HeaderHoverCard
               isLastOne={false}
@@ -193,7 +193,7 @@ const Header = () => {
 
         <div className="cursor-pointer search_popup_link_item mr-4 shrink-0">
           Phone Cases
-          <div className="absolute">
+          <div className="fixed">
             <div className="p-4"></div>
             <HeaderHoverCard
               isLastOne={false}
@@ -204,7 +204,7 @@ const Header = () => {
 
         <div className="cursor-pointer search_popup_link_item mr-4 shrink-0">
           Wall Art
-          <div className="absolute">
+          <div className="fixed">
             <div className="p-4"></div>
             <HeaderHoverCard
               isLastOne={false}
@@ -226,7 +226,7 @@ const Header = () => {
 
         <div className="cursor-pointer search_popup_link_item mr-4 shrink-0">
           Home & Living
-          <div className="absolute">
+          <div className="fixed">
             <div className="p-4"></div>
             <HeaderHoverCard
               isLastOne={false}
@@ -253,7 +253,7 @@ const Header = () => {
 
         <div className="cursor-pointer search_popup_link_item mr-4 shrink-0">
           Kids & Babies
-          <div className="absolute">
+          <div className="fixed">
             <div className="p-4"></div>
             <HeaderHoverCard
               isLastOne={false}
@@ -272,7 +272,7 @@ const Header = () => {
 
         <div className="cursor-pointer search_popup_link_item mr-4 shrink-0">
           Pets
-          <div className="absolute">
+          <div className="fixed">
             <div className="p-4"></div>
             <HeaderHoverCard
               isLastOne={false}
@@ -288,7 +288,7 @@ const Header = () => {
 
         <div className="cursor-pointer search_popup_link_item mr-4 shrink-0">
           Accessories
-          <div className="absolute">
+          <div className="fixed">
             <div className="p-4"></div>
             <HeaderHoverCard
               isLastOne={false}
@@ -315,7 +315,7 @@ const Header = () => {
 
         <div className="cursor-pointer search_popup_link_item mr-4 shrink-0">
           Stationery & Office
-          <div className="absolute">
+          <div className="fixed">
             <div className="p-4"></div>
             <HeaderHoverCard
               isLastOne={false}
@@ -333,7 +333,7 @@ const Header = () => {
 
         <div className="cursor-pointer search_popup_link_item mr-4 shrink-0">
           Gifts
-          <div className="absolute">
+          <div className="fixed">
             <div className="p-4"></div>
             <HeaderHoverCard
               isLastOne={false}
@@ -354,7 +354,7 @@ const Header = () => {
 
         <div className="cursor-pointer search_popup_link_item mr-4 shrink-0">
           Explore designs
-          <div className="absolute" style={{ right: "50px" }}>
+          <div onClick={()=>alert("dsfdg")} className="fixed" style={{ right: "50px" }}>
             <div className="p-4"></div>
             <HeaderHoverCard
               isLastOne={true}

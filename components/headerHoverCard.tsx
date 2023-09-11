@@ -13,8 +13,8 @@ const HeaderHoverCard: React.FC<Props> = ({ arr, isLastOne }) => {
         <span className="header_hover_card_arrow" style={{left:isLastOne?"auto":"",right:isLastOne?"25px":""}}></span>
 
         <div className="search_popup_hover_card_items">
-          {arr.map((e) => (
-            <div className="py-2 px-6 hover:bg-[#F2F2F6]">{e}</div>
+          {arr.map((e,i) => (
+            <div key={i} className="py-2 px-6 hover:bg-[#F2F2F6]">{e}</div>
           ))}
         </div>
       </div>

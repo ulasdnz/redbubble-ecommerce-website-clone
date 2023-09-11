@@ -76,9 +76,20 @@ body {
   border-bottom: 10px solid white;
 }
 
+.homeRangeCardWrapper{
+  display: grid;
+  align-items: stretch;
+  column-gap: 32px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 400px 1fr repeat(3, 400px);
+  row-gap: 32px;
+}
+
+
 .searchbar_placeholder::before {
   content: "Search for Stranger Things fan art";
   position: absolute;
+  text-wrap: nowrap;
   top: 0;
   left: 0;
   opacity: 0;
