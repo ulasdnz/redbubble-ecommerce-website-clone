@@ -1,8 +1,43 @@
-import React from "react";
+"use client";
+import React, { useState, useEffect, useRef } from "react";
 import SearchBar from "./SearchBar";
 import HeaderHoverCard from "./headerHoverCard";
 
 const Header = () => {
+  const [shouldFixed, setShouldFixed] = useState(false);
+  const [shouldFixCategories, setShouldFixCategories] = useState<boolean>();
+  const lastPosition = useRef(0);
+
+  // Function to handle scroll event
+  const handleScroll = () => {
+    const scrolledY = window.scrollY;
+    const before = lastPosition.current;
+    console.log("scrolledY ", scrolledY);
+    console.log("lastScrollY ", lastPosition.current);
+
+    if (scrollY >= 60) {
+      const bl = before - scrolledY > 0 ? true : false;
+      setShouldFixCategories(bl);
+      console.log(bl);
+      setShouldFixed(true);
+    } else {
+      setShouldFixCategories(false);
+      setShouldFixed(false);
+    }
+    lastPosition.current = scrolledY;
+    console.log(shouldFixCategories);
+  };
+
+  useEffect(() => {
+    // Add scroll event listener when the component mounts
+    window.addEventListener("scroll", handleScroll);
+
+    // Remove scroll event listener when the component unmounts
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <header>
       <div
@@ -23,7 +58,10 @@ const Header = () => {
           </strong>
         </span>
       </div>
-      <div className="w-full py-4 px-8 flex justify-center items-center">
+      <div
+        style={shouldFixed ? { position: "fixed", top: "0", left: "0" } : {}}
+        className="bg-white w-full py-4 px-8 flex justify-center items-center"
+      >
         <div>
           <a className="w-[180px] block mr-6" href="/">
             <svg
@@ -46,7 +84,7 @@ const Header = () => {
             </svg>
           </a>
         </div>
-        <div className="flex-1 ">
+        <div className="flex-1">
           <SearchBar />
         </div>
 
@@ -104,7 +142,21 @@ const Header = () => {
       </div>
 
       <div
-        className="w-full h-[54px] max-[1157px]:h-[80px] flex justify-between items-center px-8 search_link_items overflow-auto content-box
+        style={
+          shouldFixed
+            ? shouldFixCategories //! Buraya koy scroll direction
+              ? {
+                  position: "fixed",
+                  top: "92px",
+                  overflowY: "hidden",
+                  left: "0",
+                  zIndex: 10000000000,
+                  backgroundColor: "white",
+                }
+              : { marginTop: "92px" }
+            : {}
+        }
+        className=" w-full h-[54px] max-[1157px]:h-[80px] flex justify-between items-center px-8 search_link_items overflow-auto content-box
        "
       >
         <div className="cursor-pointer search_popup_link_item mr-4 shrink-0">
@@ -318,6 +370,9 @@ const Header = () => {
           </div>
         </div>
       </div>
+      {shouldFixed && shouldFixCategories ? (
+        <div className="pt-[200px]"></div>
+      ) : null}
     </header>
   );
 };

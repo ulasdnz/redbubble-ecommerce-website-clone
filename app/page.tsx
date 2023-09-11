@@ -3,7 +3,7 @@ import Img from "../public/homepage_first.jpg";
 
 export default async function Home() {
   return (
-    <main className="p-4 relative -z-30">
+    <main className="p-4 relative -z-30 pb-[1324px]">
       <div>
         <div className="p4 relative text-[#19124f]">
           <Image
