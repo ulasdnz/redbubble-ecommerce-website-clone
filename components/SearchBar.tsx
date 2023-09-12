@@ -87,7 +87,7 @@ const SearchBar = () => {
           </div>
           {!isOpen ? (
             <div
-              className="absolute max-w-full truncate top-[calc(50%-12px)] left-4 text-zinc-500 searchbar_placeholder"
+              className="absolute max-w-full top-[calc(50%-12px)] left-4 text-zinc-500 searchbar_placeholder"
               onClick={handleClick}
             ></div>
           ) : null}
