@@ -1,0 +1,283 @@
+{
+  "header": {
+    "categories": [
+      {
+        "title": "Clothing",
+        "elements": [
+          "All Clothing",
+          "Dresses",
+          "Hats",
+          "Hoodies & Sweatshirts",
+          "Leggings",
+          "Skirts",
+          "Socks",
+          "T-Shirts",
+          "Tank Tops"
+        ],
+        "isLastOne": false
+      },
+      {
+        "title": "Stickers",
+        "elements": ["All Stickers", "Magnets"],
+        "isLastOne": false
+      },
+      {
+        "title": "Phone Cases",
+        "elements": ["All Phone Cases", "iPhone Cases", "Samsung Galaxy"],
+        "isLastOne": false
+      },
+      {
+        "title": "Wall Art",
+        "elements": [
+          "All Wall Art",
+          "Art Board Prints",
+          "Art Prints",
+          "Canvas Prints",
+          "Framed Prints",
+          "Metal Prints",
+          "Mounted Prints",
+          "Photographic Prints",
+          "Posters",
+          "Tapestries"
+        ],
+        "isLastOne": false
+      },
+      {
+        "title": "Home & Living",
+        "elements": [
+          "All Home & Living",
+          "Acrylic Blocks",
+          "Aprons",
+          "Bath Mats",
+          "Clocks",
+          "Coasters",
+          "Comforters",
+          "Duvet Covers",
+          "Jigsaw Puzzles",
+          "Magnets",
+          "Mugs",
+          "Shower Curtains",
+          "Tapestries",
+          "Throw Blankets",
+          "Throw Pillows"
+        ],
+        "isLastOne": false
+      },
+      {
+        "title": "Kids & Babies",
+        "elements": [
+          "All Kids Clothes",
+          "Baby One-Pieces",
+          "Baby T-Shirts",
+          "Kids Masks",
+          "Kids Pullover Hoodies",
+          "Kids T-Shirts",
+          "Toddler Pullover Hoodies"
+        ],
+        "isLastOne": false
+      },
+      {
+        "title": "Pets",
+        "elements": [
+          "All Pet Supplies",
+          "Pet Bandanas",
+          "Pet Blankets",
+          "Pet Mats"
+        ],
+        "isLastOne": false
+      },
+      {
+        "title": "Accessories",
+        "elements": [
+          "All Accessories",
+          "Backpacks",
+          "Drawstring Bags",
+          "Duffle Bags",
+          "Hats",
+          "Duffle Bags",
+          "Masks",
+          "Pins",
+          "Scarves",
+          "Socks",
+          "Tech Accessories",
+          "Toiletry Bags",
+          "Tote Bags",
+          "Water Bottles",
+          "Zipper Pouches"
+        ],
+        "isLastOne": false
+      },
+      {
+        "title": "Stationery & Office",
+        "elements": [
+          "All Stationery & Office",
+          "Greeting Cards",
+          "Hardcover Journals",
+          "Mouse Pads & Desk Mats",
+          "Postcards",
+          "Spiral Notebooks"
+        ],
+        "isLastOne": false
+      },
+      {
+        "title": "Gifts",
+        "elements": [
+          "All Gifts",
+          "Gift Certificates",
+          "Gifts for Friends",
+          "Gifts for Her",
+          "Gifts for Him",
+          "Gifts for Pets",
+          "Gifts for Teens",
+          "Gifts for Them",
+          "Gifts on a Budget"
+        ],
+        "isLastOne": false
+      },
+      {
+        "title": "Explore designs",
+        "elements": [
+          "Aesthetics",
+          "Animals & Nature",
+          "For You",
+          "Netflix Fan Art",
+          "Official Fan Art",
+          "Pop Culture"
+        ],
+        "isLastOne": true
+      }
+    ],
+    "links": ["Sell your art", "Login", "Signup"]
+  },
+  "home": {
+    "shopProductRange": {
+      "imageCards": [
+        {
+          "buttonTitle": "Student Discounts",
+          "src": "https://images.ctfassets.net/5hig0ukq7ib0/4LZRApgwbf1M7k2LmuiVm5/3e27df779159b2396fa8608985e80870/23Q306_GM_B2S_Peak_StudentDiscount_DesktopTile__1_.png?fm=jpg&q=85&w=800&fl=progressive"
+        },
+        {
+          "buttonTitle": "Shop T-Shirts",
+          "src": "https://images.ctfassets.net/5hig0ukq7ib0/3ZA4uukTXzxQIcXeir1msx/5b4d098599e07d337d50c91f5dcc55da/HomepageTile_Desktop_2023_T-Shirts.png?fm=jpg&q=85&w=800&fl=progressive"
+        },
+        {
+          "buttonTitle": "Shop Deals",
+          "src": "https://images.ctfassets.net/5hig0ukq7ib0/22T2CP8HoMT95v7sAAOSx4/81fc0b953a7431b8f5820bf04bb30cf6/HomepageTile_Desktop_2023_Deals.png?fm=jpg&q=85&w=800&fl=progressive"
+        },
+        {
+          "buttonTitle": "Shop Assassin's Creed Mirage",
+          "src": "https://images.ctfassets.net/5hig0ukq7ib0/7pyyvBmcf1XYqxhGAG6IL2/b0d4ec5827d63f92b438e4ce5642d308/Homepage_Tile_ACM_Desktop.png?fm=jpg&q=85&w=800&fl=progressive"
+        },
+        {
+          "buttonTitle": "Shop Pillows",
+          "src": "https://images.ctfassets.net/5hig0ukq7ib0/5OR80Tn6F1qysRYrIl5RQi/daac7caa1494e9189ede85c7de7e5576/HomepageTile_Desktop_2023_Pillows.png?fm=jpg&q=85&w=800&fl=progressive"
+        },
+        {
+          "buttonTitle": "Shop Sweatshirts",
+          "src": "https://images.ctfassets.net/5hig0ukq7ib0/1Mi2b8sgJTF5dFNFQjZkYa/4abcf2c5e26f926337999d18aed026a4/HomepageTile_Desktop_2023_Sweatshirts.png?fm=jpg&q=85&w=800&fl=progressive"
+        },
+        {
+          "buttonTitle": "Shop Stickers",
+          "src": "https://images.ctfassets.net/5hig0ukq7ib0/3fdsCcy064MrFz3VfQrb1n/fc1c86aa2d19f388e31733cb1e46acbd/HomepageTile_Desktop_2023_Stickers.png?fm=jpg&q=85&w=800&fl=progressive"
+        },
+        {
+          "buttonTitle": "Shop Phone Cases",
+          "src": "https://images.ctfassets.net/5hig0ukq7ib0/6uTG8v7XNXEVnyCchZ6jzZ/afe090437c63f7b49906fba58013017b/HomepageTile_Desktop_2023_Phonecases.png?fm=jpg&q=85&w=800&fl=progressive"
+        },
+        {
+          "buttonTitle": "Shop Posters",
+          "src": "https://images.ctfassets.net/5hig0ukq7ib0/1SszEPreotNP8LJ5B9edzr/a720663f43ce0646fa97f2e02f67868a/HomepageTile_Posters_Desktop_2022.png?fm=jpg&q=85&w=800&fl=progressive"
+        },
+        {
+          "buttonTitle": "Shop Pets",
+          "src": "https://images.ctfassets.net/5hig0ukq7ib0/62skHLnfMOv9j7GVCzSlsy/ffe3af243703deee4c0a2a29c31a7cac/HomepageTile_Desktop_2023_Pets.png?fm=jpg&q=85&w=800&fl=progressive"
+        },
+        {
+          "buttonTitle": "Shop Hats",
+          "src": "https://images.ctfassets.net/5hig0ukq7ib0/3JcHLvBFAaxhnygJ8F9zrJ/b1a5994e6292027e00c8ca7f1b3ad923/HomepageTile_Desktop_2023_Hats.png?fm=jpg&q=85&w=800&fl=progressive"
+        },
+        {
+          "buttonTitle": "Shop Wall Art",
+          "src": "https://images.ctfassets.net/5hig0ukq7ib0/nwQrr1CxEGNykZ4Yg0Id8/35148ccdfa702803b09a1582f772635e/HomepageTile_Desktop_2023_WallArt.png?fm=jpg&q=85&w=800&fl=progressive"
+        }
+      ],
+      "svgCards": [
+        {
+          "src": "https://www.redbubble.com/explore/client/68129deeec381d27c0d6e8f8da6a574d.svg",
+          "title": "Weirdly meaningful art",
+          "description": " Millions of designs on over 70 high quality products."
+        },
+        {
+          "src": "https://www.redbubble.com/explore/client/b9ece6b82b94d96961142b8b0c2071e7.svg",
+          "title": "Purchases pay artists",
+          "description": "Money goes directly into a creative person's pocket."
+        },
+        {
+          "src": "https://www.redbubble.com/explore/client/a2d6efe99675cfe8ee95482c330c7b3a.svg",
+          "title": " Socially responsible production",
+          "description": " We're investing in programs to offset all carbon emissions."
+        }
+      ]
+    },
+    "topArtists": [
+      {
+        "name": "snazzyseagull",
+        "url": "https://ih0.redbubble.net/avatar.8260447.140x140.jpg"
+      },
+      {
+        "name": "stevenrhodes",
+        "url": "https://ih0.redbubble.net/avatar.1433098.140x140.jpg"
+      },
+      {
+        "name": "pikaole",
+        "url": "https://ih0.redbubble.net/avatar.1867616.140x140.jpg"
+      },
+      {
+        "name": "ilustrata",
+        "url": "https://ih0.redbubble.net/avatar.1124788.140x140.jpg"
+      },
+      {
+        "name": "KittyCrusAIDe",
+        "url": "https://ih0.redbubble.net/avatar.8617307.140x140.jpg"
+      },
+      {
+        "name": "Catwithhardhat",
+        "url": "https://ih0.redbubble.net/avatar.5263922.140x140.jpg"
+      }
+    ],
+    "populerProducts": [
+      {
+        "title": "Masks",
+        "image": "https://d23mnqickg7hnq.cloudfront.net/images/masks-9a19322a6fefb09b452b3a869703046b.jpg",
+        "backgroundColor": "#9fd8eb"
+      },
+      {
+        "title": "Stickers",
+        "image": "https://d23mnqickg7hnq.cloudfront.net/images/stickers-0e4cfde2e32342af5182db7be710864a.jpg",
+        "backgroundColor": "#ea91a6"
+      },
+      {
+        "title": "T-Shirts",
+        "image": "https://d23mnqickg7hnq.cloudfront.net/images/t-shirts-4f7b6badee5ad9867b7edd7c6e530995.jpg",
+        "backgroundColor": "#dabaa1"
+      }
+    ],
+    "quickLinks":[
+      {
+        "title": "Fan Art Merch",
+        "image": "https://d23mnqickg7hnq.cloudfront.net/images/fan-art-merch-9e1fcdb53974dea6d3a20e16d44e7fdb.jpg",
+        "backgroundColor": "#041d41"
+      },
+      {
+        "title": "Gift cards",
+        "image": "https://d23mnqickg7hnq.cloudfront.net/images/gift-cards-70ccbc68431ddfaca836936016ba7db8.jpg",
+        "backgroundColor": "#ff8998"
+      },
+      {
+        "title": "Gift ideas",
+        "image": "https://d23mnqickg7hnq.cloudfront.net/images/gift-ideas-2b90c08d546a189cf1239b339caa4ce9.jpg",
+        "backgroundColor": "#c69f7b"
+      }
+    ]
+  }
+}
