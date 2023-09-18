@@ -1,5 +1,8 @@
 import React from "react";
 import PopupCard from "../popupCard";
+import img1 from "../../../public/home/header/popup/populer products/img1.jpg"
+import img2 from "../../../public/home/header/popup/populer products/img2.jpg"
+import img3 from "../../../public/home/header/popup/populer products/img3.jpg"
 
 type Product = {
     title: string;
@@ -20,17 +23,17 @@ const populerProducts: React.FC<Props> = ({populerProducts}) => {
       <div className="grid grid-cols-3 gap-4">
         <PopupCard
           title="Masks"
-          image="https://d23mnqickg7hnq.cloudfront.net/images/masks-9a19322a6fefb09b452b3a869703046b.jpg"
+          image={img1}
           backgroundColor="#9fd8eb"
         />
         <PopupCard
           title="Stickers"
-          image="https://d23mnqickg7hnq.cloudfront.net/images/stickers-0e4cfde2e32342af5182db7be710864a.jpg"
+          image={img2}
           backgroundColor="#ea91a6"
         />
         <PopupCard
           title="T-Shirts"
-          image="https://d23mnqickg7hnq.cloudfront.net/images/t-shirts-4f7b6badee5ad9867b7edd7c6e530995.jpg"
+          image= {img3}
           backgroundColor="#dabaa1"
         />
       </div>

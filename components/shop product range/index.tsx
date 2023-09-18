@@ -2,6 +2,8 @@ import React from "react";
 import GroupHeadline from "../groupHeadline";
 import HomeRangeCard from "../cards/HomeRangeCard";
 import SvgCard from "../cards/svgCard";
+import getShopProductImages from "./getShopProductImages";
+import getShopProductSvgs from "./getShopProductSvgs";
 
 type ImageCard = {
   buttonTitle: string;
@@ -27,14 +29,16 @@ const index: React.FC<Props> = ({ imageCards, svgCards }) => {
               (product, i) =>
                 i < 3 && (
                   <HomeRangeCard
+                    key={i}
                     buttonTitle={product.buttonTitle}
-                    src={product.src}
+                    src={getShopProductImages()[i]}
                   />
                 )
             )}
-            {svgCards.map((item) => (
+            {svgCards.map((item, i) => (
               <SvgCard
-                src={item.src}
+                key={i}
+                src={getShopProductSvgs()[i]}
                 title={item.title}
                 description={item.description}
               />
@@ -43,8 +47,9 @@ const index: React.FC<Props> = ({ imageCards, svgCards }) => {
               (product, i) =>
                 i >= 3 && (
                   <HomeRangeCard
+                    key={i}
                     buttonTitle={product.buttonTitle}
-                    src={product.src}
+                    src={getShopProductImages()[i]}
                   />
                 )
             )}

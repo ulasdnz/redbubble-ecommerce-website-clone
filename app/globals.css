@@ -29,7 +29,9 @@ body {
   border: 1px solid transparent;
   border-radius: 10px;
 }
-
+.text_ellipsis{
+  @apply text-ellipsis	overflow-hidden	whitespace-nowrap	
+}
 .searchbar_placeholder {
   position: relative;
 }

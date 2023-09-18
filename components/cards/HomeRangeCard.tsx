@@ -8,7 +8,7 @@ interface Props {
 
 const HomeRangeCard: React.FC<Props> = ({ src, buttonTitle }) => {
   return (
-    <div className="relative w-full h-full col-[span_2] rounded bg-red-500 max-w-full max-h-full overflow-hidden">
+    <div className="relative w-full h-full col-[span_2] cursor-pointer rounded bg-red-500 max-w-full max-h-full overflow-hidden">
       <Image
         width={361}
         height={400}

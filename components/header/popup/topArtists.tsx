@@ -1,5 +1,6 @@
 import React from "react";
 import ArtistCard from "@/components/cards/artistCard";
+import topArtistsImages from "./getTopArtistsImages";
 
 type Artist = {
   name: string;
@@ -14,8 +15,8 @@ const topArtists: React.FC<Props> = ({topArtists}) => {
   return (
     <div className="relative ">
       <div className="flex ">
-        {topArtists.map((artist) => (
-          <ArtistCard name={artist.name} url={artist.url} />
+        {topArtists.map((artist,i) => (
+          <ArtistCard name={artist.name} url={topArtistsImages()[i]} />
         ))}
       </div>
     </div>

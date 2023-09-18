@@ -2,6 +2,10 @@ import Image from "next/image";
 import Img from "../public/homepage_first.jpg";
 import ShopProductRange from "@/components/shop product range";
 import FeaturedProducts from "@/components/featured products";
+import ExploreDesigns from "@/components/explore designs";
+import FeatureArtists from "@/components/featured artists/index";
+import ShopFanArt from "@/components/shop fan art/index";
+import FeatureBottom from "@/components/features bottom/index";
 import Data from "../data/data.json";
 
 export default async function Home() {
@@ -41,12 +45,11 @@ export default async function Home() {
           svgCards={Data.home.shopProductRange.svgCards}
         />
 
-        <div className="flex justify-center">
-          <div className="pt-8 px-4 w-full max-w-[1180px]">
-            <FeaturedProducts />
-            <div></div>
-          </div>
-        </div>
+        <FeaturedProducts />
+        <ExploreDesigns />
+        <FeatureArtists />
+        <ShopFanArt />
+        <FeatureBottom />
       </div>
     </main>
   );

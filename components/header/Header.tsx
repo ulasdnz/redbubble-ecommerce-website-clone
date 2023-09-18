@@ -56,8 +56,8 @@ const Header = () => {
         </div>
 
         <div className="text-base flex items-center justify-center font-semibold color-[#19124f] mr-4">
-          {Data.header.links.map((link) => (
-            <Button title={link} />
+          {Data.header.links.map((link, i) => (
+            <Button title={link} key={i*99} />
           ))}
         </div>
         <ButtonSvg />
@@ -82,8 +82,9 @@ const Header = () => {
         overflow-auto content-box 
        "
       >
-        {Data.header.categories.map((category) => (
+        {Data.header.categories.map((category,i) => (
           <CategoryLinkItem
+          key={(i+1)*31}
             title={category.title}
             elements={category.elements}
             isLastOne={category.isLastOne}

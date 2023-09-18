@@ -262,7 +262,7 @@
         "backgroundColor": "#dabaa1"
       }
     ],
-    "quickLinks":[
+    "quickLinks": [
       {
         "title": "Fan Art Merch",
         "image": "https://d23mnqickg7hnq.cloudfront.net/images/fan-art-merch-9e1fcdb53974dea6d3a20e16d44e7fdb.jpg",
@@ -278,6 +278,440 @@
         "image": "https://d23mnqickg7hnq.cloudfront.net/images/gift-ideas-2b90c08d546a189cf1239b339caa4ce9.jpg",
         "backgroundColor": "#c69f7b"
       }
-    ]
+    ],
+    "featuredProducts": [
+      {
+        "src": "https://ih1.redbubble.net/image.4774881474.3671/tb,840x840,medium-c,1,198,600,600-bg,f8f8f8.u2.jpg",
+        "title": "Would you still love me if I was a worm? All Over Print Tote Bag",
+        "artistName": "by Msbhaiive",
+        "price": "$14.59"
+      },
+      {
+        "src": "https://ih1.redbubble.net/image.5219057496.7285/drawstring_bag,x600-pad,600x600,f8f8f8.jpg",
+        "title": "Little boy tree with cute flowers Drawstring Bag",
+        "artistName": "by lizdejupiter",
+        "price": "$25.94"
+      },
+      {
+        "src": "https://ih1.redbubble.net/image.2174316701.2830/mwo,x600,iphone_6s_snap-pad,600x600,f8f8f8.jpg",
+        "title": "See the Good Rainbow  iPhone Snap Case",
+        "artistName": "by JaneyMakes",
+        "price": "$21.97"
+      },
+      {
+        "src": "https://ih1.redbubble.net/image.5198739699.2517/throwpillow,small,600x-bg,f8f8f8-c,0,120,600,600.jpg",
+        "title": "The Moon and its phases Throw Pillow",
+        "artistName": "by uellaaa",
+        "price": "From $15.05"
+      },
+      {
+        "src": "https://ih1.redbubble.net/image.5047675206.4196/mug,standard,x334,right-pad,600x600,f8f8f8.u1.jpg",
+        "title": "Forest Floor Mushroom repeating pattern Classic Mug",
+        "artistName": "by CozyPtarmigan",
+        "price": "From $10.66"
+      },
+      {
+        "src": "https://ih1.redbubble.net/image.4685835072.6271/mwo,x600,iphone_6s_snap-pad,600x600,f8f8f8.u1.jpg",
+        "title": "double duck iPhone Snap Case",
+        "artistName": "by ComicadaArt",
+        "price": "$21.06"
+      },
+
+      {
+        "src": "https://ih1.redbubble.net/image.4148822001.7133/st,small,507x507-pad,600x600,f8f8f8.jpg",
+        "title": "Bear in a Teacup Sticker",
+        "artistName": "by Ash-Elizabeth",
+        "price": "From $1.20"
+      },
+      {
+        "src": "https://ih1.redbubble.net/image.477740100.5684/throwpillow,small,600x-bg,f8f8f8-c,0,120,600,600.u1.jpg",
+        "title": "Stranger Things Steve Harrington | Available on Mask Throw Pillow",
+        "artistName": "by thelasttype",
+        "price": "From $16.16"
+      },
+      {
+        "src": "https://ih1.redbubble.net/image.5151347441.9395/sn,x600-pad,600x600,f8f8f8.jpg",
+        "title": "Fairy frog Spiral Notebook",
+        "artistName": "by Vaigerika",
+        "price": "From $10.19"
+      },
+      {
+        "src": "https://ih1.redbubble.net/image.1940245666.1230/st,small,507x507-pad,600x600,f8f8f8.u1.jpg",
+        "title": "Live Fast Eat Trash Sticker",
+        "artistName": "by possum-mood",
+        "price": "From $1.18"
+      },
+      {
+        "src": "https://ih1.redbubble.net/image.5194548213.3260/ssrco,slim_fit_t_shirt,mens,fafafa:ca443f4786,front,square_product,600x600.jpg",
+        "title": "Rodeo Cats - Ginger Cats Essential T-Shirt",
+        "artistName": "by AnimalCrew",
+        "price": "From $18.59"
+      },
+      {
+        "src": "https://ih1.redbubble.net/image.5191002980.8056/fp,504x498,black,off_white,box20,s,f8f8f8-pad,600x600,f8f8f8.jpg",
+        "title": "Maths Cat Framed Art Print",
+        "artistName": "by kilkennycat",
+        "price": "$72.68"
+      },
+      {
+        "src": "https://ih1.redbubble.net/image.5202566871.4820/ssrco,racerback,womens,101010:01c5ca27c6,front,square_product,x600-bg,f8f8f8.1.jpg",
+        "title": "Forest Anatomy (No.1) Racerback Tank Top",
+        "artistName": "by Laorel",
+        "price": "$21.78"
+      },
+      {
+        "src": "https://ih1.redbubble.net/image.5186006613.4333/ls,13inch,x600-c,90,0,600,600-bg,f8f8f8.jpg",
+        "title": "Light green and blush pink floral pattern Laptop Sleeve",
+        "artistName": "by Alja Horvat",
+        "price": "$42.58"
+      },
+      {
+        "src": "https://ih1.redbubble.net/image.525610647.3492/ssrco,slim_fit_t_shirt,mens,101010:01c5ca27c6,front,square_product,600x600.jpg",
+        "title": "Chaotic Neutral Alignment Kinda Care Kinda Don&amp;#39;t Funny Quotes Essential T-Shirt",
+        "artistName": "by pixeptional",
+        "price": "From $17.10"
+      },
+      {
+        "src": "https://ih1.redbubble.net/image.5135269838.7292/ra,womens_tshirt,x1860,fafafa:ca443f4786,front-c,324,363,600,600-bg,f8f8f8.jpg",
+        "title": "Polka dot shark Fitted T-Shirt",
+        "artistName": "by pikaole",
+        "price": "$22.03"
+      },
+      {
+        "src": "https://ih1.redbubble.net/image.2850108015.9319/papergc,300x,w,f8f8f8-pad,600x600,f8f8f8.u1.jpg",
+        "title": "Work To Do Naps To Take Leopard with Monstera Greenery Plant Classic Cute Traditional Tattoo Flash Style Print by Ella Mobbs Creep Heart Greeting Card",
+        "artistName": "by Ella Mobbs",
+        "price": "From $2.70"
+      },
+      {
+        "src": "https://ih1.redbubble.net/image.945499715.8454/scarf,x630-pad,600x600,f8f8f8.jpg",
+        "title": "Geometry in Nature- Find the Avians Scarf",
+        "artistName": "by winkeltriple",
+        "price": "From $22.54"
+      },
+      {
+        "src": "https://ih1.redbubble.net/image.5016142409.1662/gptr,1265x,front,black-c,330,402,600,600-bg,f8f8f8.jpg",
+        "title": "ice pops - bright blue Graphic T-Shirt",
+        "artistName": "by littlearrow",
+        "price": "$30.60"
+      },
+      {
+        "src": "https://ih1.redbubble.net/image.3627075482.3353/sn,x600-pad,600x600,f8f8f8.jpg",
+        "title": "Saving Moments Disquette Cloud Spiral Notebook",
+        "artistName": "by CherryMaster28",
+        "price": "From by by CherryMaster28"
+      },
+      {
+        "src": "https://ih1.redbubble.net/image.688178649.9375/st,small,507x507-pad,600x600,f8f8f8.u2.jpg",
+        "title": "Sweet Treats: Ice Cream  Sticker",
+        "artistName": "by KatticusFlinch",
+        "price": "From $1.18"
+      },
+      {
+        "src": "https://ih1.redbubble.net/image.5147025388.1564/gptr,1265x,front,black-c,330,402,600,600-bg,f8f8f8.jpg",
+        "title": "Swimming Otters Graphic T-Shirt",
+        "artistName": "by claudiecb",
+        "price": "$30.60"
+      },
+      {
+        "src": "https://ih1.redbubble.net/image.1184264824.0984/st,small,507x507-pad,600x600,f8f8f8.jpg",
+        "title": "Plant Plesiosaur Sticker",
+        "artistName": "by mossworm",
+        "price": "From $1.18"
+      },
+      {
+        "src": "https://ih1.redbubble.net/image.3827288238.0537/mug,standard,x334,right-pad,600x600,f8f8f8.jpg",
+        "title": "You're a BAD ASS Classic Mug",
+        "artistName": "by jasmine hortop",
+        "price": "From $10.58"
+      },
+      {
+        "src": "https://ih1.redbubble.net/image.4979865955.9573/drawstring_bag,x600-pad,600x600,f8f8f8.jpg",
+        "title": "Woud You Close the Curtain Drawstring Bag",
+        "artistName": "by Aeppol",
+        "price": "$25.72"
+      },
+      {
+        "src": "https://ih1.redbubble.net/image.4973721270.7034/sn,x600-pad,600x600,f8f8f8.jpg",
+        "title": "Moonlight Spiral Notebook",
+        "artistName": "by ggggrimes",
+        "price": "From $11.04"
+      },
+      {
+        "src": "https://ih1.redbubble.net/image.5114476186.8130/pr,150x100,600x-pad,600x600,f8f8f8.jpg",
+        "title": "The Familiar Zipper Pouch",
+        "artistName": "by Rebecca Flaum",
+        "price": "From $8.74"
+      },
+      {
+        "src": "https://ih1.redbubble.net/image.1916903715.0662/tb,840x840,medium-c,1,198,600,600-bg,f8f8f8.jpg",
+        "title": "Flower Fields All Over Print Tote Bag",
+        "artistName": "by Iisa Nuorttila",
+        "price": "From $15.08"
+      },
+      {
+        "src": "https://ih1.redbubble.net/image.4867140041.2723/mug,travel,x600,center-pad,600x600,f8f8f8.jpg",
+        "title": "Stranger Petals Travel Coffee Mug",
+        "artistName": "by njonestees",
+        "price": "$22.99"
+      },
+      {
+        "src": "https://ih1.redbubble.net/image.5083182851.5201/fp,504x498,black,off_white,box20,s,f8f8f8-pad,600x600,f8f8f8.jpg",
+        "title": "GROW WILD - POPPY Framed Art Print",
+        "artistName": "by Medusa Dollmaker",
+        "price": "$78.74"
+      },
+      {
+        "src": "https://ih1.redbubble.net/image.4801973591.7011/ls,13inch,x600-c,90,0,600,600-bg,f8f8f8.jpg",
+        "title": "Cool and hot Laptop Sleeve",
+        "artistName": "by ppmid",
+        "price": "$39.42"
+      },
+      {
+        "src": "https://ih1.redbubble.net/image.4679546748.5983/sn,x600-pad,600x600,f8f8f8.jpg",
+        "title": "no plot just vibes Spiral Notebook",
+        "artistName": "by DesignsByAND",
+        "price": "From $11.21"
+      },
+      {
+        "src": "https://ih1.redbubble.net/image.5068881231.2264/ssrco,racerback,womens,101010:01c5ca27c6,front,square_product,x600-bg,f8f8f8.1.jpg",
+        "title": "GMO Racerback Tank Top",
+        "artistName": "by NinoMelon",
+        "price": "$20.10"
+      },
+      {
+        "src": "https://ih1.redbubble.net/image.4273671400.0074/papergc,300x,w,f8f8f8-pad,600x600,f8f8f8.jpg",
+        "title": "Water Hole Greeting Card",
+        "artistName": "by Maisie Kane",
+        "price": "From $2.41"
+      },
+      {
+        "src": "https://ih1.redbubble.net/image.4922459839.6147/ssrco,racerback,womens,101010:01c5ca27c6,front,square_product,x600-bg,f8f8f8.1.jpg",
+        "title": "Feminist Killjoy Racerback Tank Top",
+        "artistName": "by nevhada",
+        "price": "$24.29"
+      },
+      {
+        "src": "https://ih1.redbubble.net/image.4775696021.4424/drawstring_bag,x600-pad,600x600,f8f8f8.jpg",
+        "title": "Music of summer Drawstring Bag",
+        "artistName": "by clingcling",
+        "price": "$26.79"
+      },
+      {
+        "src": "https://ih1.redbubble.net/image.5106351820.9138/throwpillow,small,600x-bg,f8f8f8-c,0,120,600,600.jpg",
+        "title": "checkered pattern with strawberries Throw Pillow",
+        "artistName": "by burbura",
+        "price": "From $16.15"
+      },
+      {
+        "src": "https://ih1.redbubble.net/image.5004851282.8940/ls,13inch,x600-c,90,0,600,600-bg,f8f8f8.u2.jpg",
+        "title": "Deamon Orb Laptop Sleeve",
+        "artistName": "by VaultCrawler",
+        "price": "$37.85"
+      },
+      {
+        "src": "https://ih1.redbubble.net/image.5091044099.7002/ssrco,slim_fit_t_shirt,mens,fafafa:ca443f4786,front,square_product,600x600.jpg",
+        "title": "unkillable Essential T-Shirt",
+        "artistName": "by ryegardens",
+        "price": "$18.59"
+      },
+      {
+        "src": "https://ih1.redbubble.net/image.3671100055.9593/fp,504x498,black,off_white,box20,s,f8f8f8-pad,600x600,f8f8f8.u1.jpg",
+        "title": "But I like you, and that is not fake.  Framed Art Print",
+        "artistName": "by StargirlRen",
+        "price": "$72.68"
+      },
+      {
+        "src": "https://ih1.redbubble.net/image.3806411406.3816/throwpillow,small,600x-bg,f8f8f8-c,0,120,600,600.jpg",
+        "title": "Turquoise and Yellow Checkerboard Pattern  Throw Pillow",
+        "artistName": "by DaisyLemon",
+        "price": "From $14.91"
+      },
+      {
+        "src": "https://ih1.redbubble.net/image.5035314778.9561/papergc,300x,w,f8f8f8-pad,600x600,f8f8f8.jpg",
+        "title": "Mental Health Quote - This is a Safe Space Greeting Card",
+        "artistName": "by AvantGirl",
+        "price": "From $1.70"
+      },
+      {
+        "src": "https://ih1.redbubble.net/image.5003753077.7208/mug,standard,x334,right-pad,600x600,f8f8f8.jpg",
+        "title": "All Paw-erful Pugnacious Classic Mug",
+        "artistName": "by butcherbilly",
+        "price": "From $15.86"
+      },
+      {
+        "src": "https://ih1.redbubble.net/image.2344965195.5077/ssrco,racerback,womens,101010:01c5ca27c6,front,square_product,x600-bg,f8f8f8.1.jpg",
+        "title": "I Was Not Made To Be Subtle Racerback Tank Top",
+        "artistName": "by OhFineArt",
+        "price": "$20.94"
+      },
+      {
+        "src": "https://ih1.redbubble.net/image.3034646445.0215/fp,504x498,black,off_white,box20,s,f8f8f8-pad,600x600,f8f8f8.u2.jpg",
+        "title": "Opossum Live Laugh Love Framed Art Print",
+        "artistName": "by heyouwitheface",
+        "price": "$69.65"
+      },
+      {
+        "src": "https://ih1.redbubble.net/image.4993005849.5217/pr,150x100,600x-pad,600x600,f8f8f8.u2.jpg",
+        "title": "Victorian Velociraptor Fashion Plates Zipper Pouch",
+        "artistName": "by lurepeating",
+        "price": "From $9.47"
+      }
+    ],
+    "exploreDesigns": [
+      {
+        "src": "https://ih0.redbubble.net/image.4715170329.6284/flat,500x,075,f.u2.jpg",
+        "title": "AI Generated Art -  3D Patterned Font ",
+        "artistName": "by DominicAi",
+        "productNumber": "39 products"
+      },
+      {
+        "src": "https://ih0.redbubble.net/image.4561730580.9087/flat,500x,075,f.u1.jpg",
+        "title": "Magical Bookstore in the Woods",
+        "artistName": "by candymachine85",
+        "productNumber": "82 products"
+      },
+      {
+        "src": "https://ih1.redbubble.net/image.5198722003.2007/flat,500x,075,f.u3.jpg",
+        "title": "Jupiter",
+        "artistName": "by uellaaa",
+        "productNumber": "61 products"
+      },
+      {
+        "src": "https://ih0.redbubble.net/image.111742474.9632/flat,500x,075,f.u6.jpg",
+        "title": "Sweet fun ^_^",
+        "artistName": "by Bakani",
+        "productNumber": "42 products"
+      },
+      {
+        "src": "https://ih1.redbubble.net/image.604459788.9730/flat,500x,075,f.u1.jpg",
+        "title": "#Music",
+        "artistName": "by Thinky  Pain",
+        "productNumber": "58 products"
+      }
+    ],
+    "featuredArtists": [
+      {
+        "image": "https://ih1.redbubble.net/image.5234742174.8041/flat,300x200,075,t.jpg",
+        "avatar": "https://ih1.redbubble.net/avatar.1867616.140x140.jpg",
+        "title": "pikaole"
+      },
+      {
+        "image": "https://ih1.redbubble.net/image.2174395636.5351/flat,300x200,075,t.jpg",
+        "avatar": "https://ih0.redbubble.net/avatar.3644294.140x140.jpg",
+        "title": "JaneyMakes"
+      },
+      {
+        "image": "https://ih1.redbubble.net/image.5173339851.0312/flat,300x200,075,t.jpg",
+        "avatar": "https://ih1.redbubble.net/avatar.1218039.140x140.jpg",
+        "title": "Ella Mobbs"
+      },
+      {
+        "image": "",
+        "avatar": "",
+        "title": "winkeltriple"
+      },
+      {
+        "image": "",
+        "avatar": "",
+        "title": "littlearrow"
+      },
+      {
+        "image": "",
+        "avatar": "",
+        "title": "CherryMaster28"
+      },
+      {
+        "image": "",
+        "avatar": "",
+        "title": "KatticusFlinch"
+      },
+      {
+        "image": "",
+        "avatar": "",
+        "title": "claudiecb"
+      },
+      {
+        "image": "",
+        "avatar": "",
+        "title": "mossworm"
+      },
+      {
+        "image": "",
+        "avatar": "",
+        "title": "jasmine hortop"
+      },
+      {
+        "image": "",
+        "avatar": "",
+        "title": "Aeppol"
+      }
+    ],
+    "shopFanArt": {
+      "first": [
+        {
+          "src": "https://ih1.redbubble.net/image.810521214.3021/ra,womens_tshirt,x1860,462445:542506a2a5,front-c,324,363,600,600-bg,f8f8f8.u1.jpg",
+          "title": "Lady Amalthea - The Last Unicorn Fitted T-Shirt",
+          "artistName": "by Medusa Dollmaker",
+          "price": "$23.93"
+        },
+        {
+          "src": "https://ih1.redbubble.net/image.732646783.8850/ra,tank,x1860,dd2121:8219e99865,front-c,288,321,600,600-bg,f8f8f8.u2.jpg",
+          "title": "The Last Unicorn Tank Top",
+          "artistName": "by powersdesign",
+          "price": "$22.49"
+        },
+        {
+          "src": "https://ih1.redbubble.net/image.2343635882.4367/ra,kids_tee,x750,192033:321fc38aa7,front-pad,600x600,f8f8f8.jpg",
+          "title": "Last Unicorn - Flower Garden Kids T-Shirt",
+          "artistName": "by Miriam Steinau",
+          "price": "From $19.23"
+        },
+        {
+          "src": "https://ih1.redbubble.net/image.1016920129.2936/sn,x600-pad,600x600,f8f8f8.jpg",
+          "title": "One of a Kind Creature Spiral Notebook",
+          "artistName": "by koolaid-girl",
+          "price": "From $11.08"
+        },
+        {
+          "src": "https://ih1.redbubble.net/image.566473645.4056/st,small,507x507-pad,600x600,f8f8f8.u17.jpg",
+          "title": "The Last Sticker",
+          "artistName": "by etcherSketch",
+          "price": "From $1.18"
+        }
+      ],
+      "second": [
+        {
+          "src": "https://ih1.redbubble.net/image.913146769.1889/ur,blanket_large_bed,square,x600.1.jpg",
+          "title": "Feeling Cute - Borderlands Psycho Throw Blanket",
+          "artistName": "by thesadsquatch",
+          "price": "$61.53"
+        },
+        {
+          "src": "https://ih1.redbubble.net/image.914778103.9187/ur,socks_flatlay_medium,square,600x600-bg,f8f8f8.1u3.jpg",
+          "title": "CL4P-TP Pattern  Socks",
+          "artistName": "by Macbendigo",
+          "price": "From $12.08"
+        },
+        {
+          "src": "https://ih1.redbubble.net/image.809500089.3532/ssrco,classic_tee,mens,fafafa:ca443f4786,front_alt,square_product,600x600.u3.jpg",
+          "title": "Claptrap 2 Classic T-Shirt",
+          "artistName": "by iampompeii",
+          "price": "From $16.57"
+        },
+        {
+          "src": "https://ih1.redbubble.net/image.1179638126.0405/ssrco,slim_fit_t_shirt,mens,dd2121:8219e99865,front,square_product,600x600.jpg",
+          "title": "Vault Symbol Stitched - Borderlands Essential T-Shirt",
+          "artistName": "by Doomgriever",
+          "price": "From $16.57"
+        },
+        {
+          "src": "https://ih1.redbubble.net/image.410825643.4406/st,small,507x507-pad,600x600,f8f8f8.u7.jpg",
+          "title": "Bombshell Moxxi V2 Sticker",
+          "artistName": "by AntheaWright",
+          "price": "From $1.43"
+        }
+      ]
+    }
   }
 }

@@ -1,11 +1,11 @@
 import React from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
-type Props = { src: string; title: string; description: string };
+type Props = { src: StaticImageData; title: string; description: string };
 
 const svgCard: React.FC<Props> = ({ title, description, src }) => {
   return (
-    <div className="flex p-4 box-content col-[span_2] row-start-2">
+    <div className="flex p-4 box-content col-[span_2] row-start-2 cursor-pointer">
       <div className="mr-8 w-[50px]">
         <Image
           width={32}

@@ -1,14 +1,15 @@
 import React from "react";
 import Image from "next/image";
+import { StaticImageData } from "next/image";
 
 interface Props {
   name: string;
-  url: string;
+  url: StaticImageData;
 }
 
 const ArtistCard: React.FC<Props> = ({ name, url }) => {
   return (
-    <div className="mr-4 shrink-0">
+    <div className="mr-4 shrink-0 cursor-pointer">
       <div>
         <Image
           width={80}

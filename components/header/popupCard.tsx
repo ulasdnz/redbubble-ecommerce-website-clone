@@ -1,9 +1,9 @@
 import React from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 interface Props {
   title: string,
-  image: string,
+  image: StaticImageData,
   backgroundColor: string
 }
 
