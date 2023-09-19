@@ -66,7 +66,7 @@ const SearchBar = () => {
         <div className={styles.loop}>
           <input
             id="search"
-            className="z-10 w-full h-[56px] bg-[#f2f2f6] outline-none p-4 popup 
+            className="z-10 w-full h-[56px] bg-[#f2f2f6]  outline-none p-4 popup 
              focus:h-[56px]"
             value={inputValue}
             onChange={(e) => handleChange(e)}
@@ -88,12 +88,14 @@ const SearchBar = () => {
               </span>
             </span>
           </div>
-          {!isOpen ? (
-            <div
-              className="absolute max-w-full top-[calc(50%-12px)] left-4 text-zinc-500 searchbar_placeholder"
-              onClick={handleClick}
-            ></div>
-          ) : null}
+          <div className="w-full h-full bg-red-500 ">
+            {!isOpen ? (
+              <div
+                className="absolute  max-w-full top-[calc(50%-12px)] left-4 text-zinc-500 searchbar_placeholder"
+                onClick={handleClick}
+              ></div>
+            ) : null}
+          </div>
           {isOpen ? (
             <div
               ref={popupRef}

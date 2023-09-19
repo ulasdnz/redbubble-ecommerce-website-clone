@@ -89,6 +89,8 @@ body {
 
 
 .searchbar_placeholder::before {
+  width: 73%;
+  overflow: hidden;
   content: "Search for Stranger Things fan art";
   position: absolute;
   text-wrap: nowrap;
