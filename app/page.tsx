@@ -6,11 +6,12 @@ import ExploreDesigns from "@/components/explore designs";
 import FeatureArtists from "@/components/featured artists/index";
 import ShopFanArt from "@/components/shop fan art/index";
 import FeatureBottom from "@/components/features bottom/index";
+import Footer from "@/components/footer/index";
 import Data from "../data/data.json";
 
 export default async function Home() {
   return (
-    <main className="relative -z-30 pb-[1324px]">
+    <main className="relative -z-30">
       <div className="text-[#19124f]">
         <div className="relative ">
           <Image
@@ -50,6 +51,7 @@ export default async function Home() {
         <FeatureArtists />
         <ShopFanArt />
         <FeatureBottom />
+        <Footer/> 
       </div>
     </main>
   );

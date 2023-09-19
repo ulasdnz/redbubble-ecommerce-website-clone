@@ -712,6 +712,50 @@
           "price": "From $1.43"
         }
       ]
-    }
+    },
+    "footer": [
+      {
+        "title": "Shop",
+        "items": [
+          "Gift Guides",
+          "Fan Art",
+          "New Works",
+          "Blog",
+          "Student Discount",
+          "Login",
+          "Signup",
+          "Bulk orders"
+        ]
+      },
+      {
+        "title": "About",
+        "items": [
+          "About Us",
+          "Social Resposibility",
+          "Partner Program",
+          "Affiliates",
+          "Sell your art",
+          "Jobs",
+          "Artist Blog"
+        ]
+      },
+      {
+        "title": "Help",
+        "items": [
+          "Delivery",
+          "Returns",
+          "Help Center",
+          "Guidelines",
+          "Copyright",
+          "Investor Center",
+          "Contact Us",
+          "Cookie Settings"
+        ]
+      },
+      {
+        "title": "Social",
+        "items": ["Instagram", "Facebook", "Twitter", "Tumblr", "Pinterest"]
+      }
+    ]
   }
 }
