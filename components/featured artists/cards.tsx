@@ -54,7 +54,7 @@ const cards = () => {
       <div
         className="absolute z-20 p-1 top-[44%] -right-5 bg-white rounded-full	search_popup_caruosel_arrow 
                       cursor-pointer active:border-[3px] active:border-solid active:border-[#AFA3F2]
-                      "
+                      max-sm:hidden     "
         style={{
           opacity: opacityOfArrow,
           cursor: opacityOfArrow == 1 ? "pointer" : "not-allowed",
@@ -76,7 +76,7 @@ const cards = () => {
         <div
           className="absolute  z-20 p-1 top-[43%] -left-5 bg-white rounded-full	search_popup_caruosel_arrow 
                       cursor-pointer  active:border-[3px] active:border-solid active:border-[#AFA3F2]
-                      "
+                      max-sm:hidden "
           onClick={() => scrollLeftHandle()}
         >
           <svg

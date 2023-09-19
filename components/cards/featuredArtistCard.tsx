@@ -9,8 +9,12 @@ type Props = {
 
 const featuredArtistCard: React.FC<Props> = ({ image, avatar, title }) => {
   return (
-    <div className="cursor-pointer min-w-[calc(((100%_+_16px)_/_4)_-_16px)] w-[calc(((100%_+_16px)_/_4)_-_16px)]  mr-4 
-    rounded shadow-[0_1px_1px_-1px_rgba(0,0,0,0.15),0_1px_2px_0_rgba(0,0,0,0.1),0_1px_4px_0_rgba(0,0,0,0.1)]">
+    <div
+      className="cursor-pointer min-w-[calc(((100%_+_16px)_/_4)_-_16px)] w-[calc(((100%_+_16px)_/_4)_-_16px)]  mr-4 
+    rounded shadow-[0_1px_1px_-1px_rgba(0,0,0,0.15),0_1px_2px_0_rgba(0,0,0,0.1),0_1px_4px_0_rgba(0,0,0,0.1)]
+    max-sm:w-[78%] max-sm:min-w-[78%]
+    "
+    >
       <div className="relative">
         <Image
           width={0}

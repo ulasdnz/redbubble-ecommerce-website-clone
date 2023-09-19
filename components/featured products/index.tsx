@@ -62,7 +62,7 @@ const index = () => {
   }
 
   return (
-    <div className="flex justify-center pt-2">
+    <div className="flex justify-center pt-2 overflow-hidden">
       <div className="pt-8 relative pl-3 w-full max-w-[1170px]">
         <div>
           <GroupHeadline title="Featured products" />
