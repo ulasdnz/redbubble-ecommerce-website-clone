@@ -15,6 +15,7 @@ const cards: React.FC<Props> = ({ toggle }) => {
     <div className="flex gap-4 ">
       {data.images.map((image,i) => (
         <ExploreDesignCard
+        key={i}
           src={image}
           title={data.datas[i].title}
           artistName={data.datas[i].artistName}

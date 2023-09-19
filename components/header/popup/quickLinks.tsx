@@ -1,11 +1,11 @@
 import React from "react";
 import PopupCardSm from "../popupCard_sm";
-import img1 from "../../../public/home/header/popup/quick links/img1.jpg"
-import img2 from "../../../public/home/header/popup/quick links/img2.jpg"
-import img3 from "../../../public/home/header/popup/quick links/img3.jpg"
-import {StaticImageData} from "next/image"
+import img1 from "../../../public/home/header/popup/quick links/img1.jpg";
+import img2 from "../../../public/home/header/popup/quick links/img2.jpg";
+import img3 from "../../../public/home/header/popup/quick links/img3.jpg";
+import { StaticImageData } from "next/image";
 
-const images: StaticImageData[] = [img1, img2, img3]
+const images: StaticImageData[] = [img1, img2, img3];
 
 type QuickLink = {
   title: string;
@@ -24,6 +24,7 @@ const quickLinks: React.FC<Props> = ({ quickLinks }) => {
       <div className="grid grid-cols-3 gap-4">
         {quickLinks.map((item, i) => (
           <PopupCardSm
+            key={i}
             title={item.title}
             image={images[i]}
             backgroundColor={item.backgroundColor}

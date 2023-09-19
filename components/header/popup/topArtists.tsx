@@ -16,7 +16,7 @@ const topArtists: React.FC<Props> = ({topArtists}) => {
     <div className="relative ">
       <div className="flex ">
         {topArtists.map((artist,i) => (
-          <ArtistCard name={artist.name} url={topArtistsImages()[i]} />
+          <ArtistCard key={i} name={artist.name} url={topArtistsImages()[i]} />
         ))}
       </div>
     </div>

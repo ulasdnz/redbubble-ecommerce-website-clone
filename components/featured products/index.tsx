@@ -42,7 +42,7 @@ const index = () => {
   let render: any = [];
   for (let i = 0; i < Data.home.featuredProducts.length; i = i + 2) {
     render.push(
-      <div>
+      <div key={i}> 
         <FeaturedProductCard
           src={images[i]}
           title={Data.home.featuredProducts[i].title}
