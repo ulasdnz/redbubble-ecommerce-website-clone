@@ -3,7 +3,7 @@ import React from "react";
 const Logo = () => {
   return (
     <div>
-      <a className="w-[180px] block mr-6" href="/">
+      <a className="w-[180px] block mr-6 max-sm:w-[133px]" href="/">
         <svg
           role="img"
           data-testid="ds-2019-logo"

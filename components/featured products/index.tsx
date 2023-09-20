@@ -62,20 +62,20 @@ const index = () => {
   }
 
   return (
-    <div className="flex justify-center pt-2 overflow-hidden">
-      <div className="pt-8 relative pl-3 w-full max-w-[1170px]">
+    <div className="flex justify-center pt-2 ">
+      <div className="pt-8 relative pl-3 pr-1 w-full max-w-[1170px] h-auto max-sm:pl-4 overflow-hidden">
         <div>
           <GroupHeadline title="Featured products" />
           <div
             ref={scrollContainerRef}
-            className="flex gap-3 justify-between pt-1 h-[700px] overflow-hidden  scroll-smooth scrollbar-hide"
+            className="flex gap-3 justify-between pt-1 h-auto overflow-x-scroll scroll-smooth scrollbar_hide"
           >
             {render}
           </div>
           <div
-            className="absolute z-20 p-1 top-[52%] right-0 bg-white rounded-full	search_popup_caruosel_arrow 
+            className="absolute z-20 p-1 top-[52%] right-1 bg-white rounded-full	search_popup_caruosel_arrow 
                       cursor-pointer active:border-[3px] active:border-solid active:border-[#AFA3F2]
-                      "
+                      max-sm:hidden"
             style={{
               opacity: opacityOfArrow,
               cursor: opacityOfArrow == 1 ? "pointer" : "not-allowed",
@@ -95,9 +95,9 @@ const index = () => {
           </div>
           {showScroll ? (
             <div
-              className="absolute  z-20 p-1 top-[51%] left-0 bg-white rounded-full	search_popup_caruosel_arrow 
+              className="absolute  z-20 p-1 top-[51%] left-1 bg-white rounded-full	search_popup_caruosel_arrow 
                       cursor-pointer  active:border-[3px] active:border-solid active:border-[#AFA3F2]
-                      "
+                      max-sm:hidden "
               onClick={() => scrollLeftHandle()}
             >
               <svg

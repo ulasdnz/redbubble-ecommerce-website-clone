@@ -5,7 +5,7 @@ import Cards from "./cards";
 const index = () => {
   return (
     <div className="flex justify-center pt-8 px-4 mt-8 overflow-hidden">
-      <div className="w-full max-w-[1170px]">
+      <div className="w-full max-w-[1180px]">
         <Headline />
         <Cards />
       </div>

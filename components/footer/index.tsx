@@ -11,7 +11,7 @@ const index = () => {
     <footer>
       <div className="w-full bg-[#07002F] text-white  ">
         <div className=" mr-auto ml-auto max-w-[1180px] w-full ">
-          <div className="flex max-w-[1180px] w-full py-8 px-6">
+          <div className="flex max-sm:block max-w-[1180px] w-full py-8 px-6">
             <Col data={Data.home.footer[0]} isSocialMedia={false} />
             <Col data={Data.home.footer[1]} isSocialMedia={false} />
             <Col data={Data.home.footer[2]} isSocialMedia={false} />
@@ -28,9 +28,12 @@ const index = () => {
             </div>
           </div>
         </div>
-        <div className="w-full flex flex-col justify-center items-center p-4">
-          <div className="mr-auto ml-auto">
-            <div className="flex p-4 pb-5">
+        <div
+          className="w-full flex flex-col justify-center items-center p-4
+        "
+        >
+          <div className="mr-auto ml-auto max-sm:ml-0">
+            <div className="flex p-4 pb-5 max-sm:pl-0">
               <div className="mr-4">
                 <Image
                   width={120}
@@ -48,7 +51,7 @@ const index = () => {
                 />
               </div>
             </div>
-            <div className="p-6 pt-12 text-[rgb(150,149,168)] text-[12px] text-center">
+            <div className="p-6 pt-12 text-[rgb(150,149,168)] text-[12px] text-center max-sm:pl-0 max-sm:text-start">
               © Redbubble. All Rights Reserved
             </div>
           </div>

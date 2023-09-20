@@ -29,8 +29,8 @@ body {
   border: 1px solid transparent;
   border-radius: 10px;
 }
-.text_ellipsis{
-  @apply text-ellipsis	overflow-hidden	whitespace-nowrap	
+.text_ellipsis {
+  @apply text-ellipsis	overflow-hidden	whitespace-nowrap;
 }
 .searchbar_placeholder {
   position: relative;
@@ -41,8 +41,8 @@ body {
     0 5px 10px 0 rgba(0, 0, 0, 0.1), 0 1px 12px 0 rgba(0, 0, 0, 0.1);
 }
 
-.search_link_items{
-  border-bottom: 2px solid #F2F2F6;
+.search_link_items {
+  border-bottom: 2px solid #f2f2f6;
 }
 
 .search_popup_hover_card {
@@ -52,7 +52,7 @@ body {
     0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.1);
 }
 .search_popup_link_item:hover .search_popup_hover_card {
-  display: block ;
+  display: block;
   opacity: 1;
 }
 
@@ -65,20 +65,21 @@ body {
   opacity: 1;
 }
 
-.header_hover_card_arrow{
+.header_hover_card_arrow {
   position: absolute;
-  top:-18px;
+  top: -18px;
   left: 44px;
   z-index: 999999999;
   width: 0;
   height: 0;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-bottom: 10px solid ;
+  border-bottom: 10px solid;
   border-bottom: 10px solid white;
 }
+ 
 
-.homeRangeCardWrapper{
+.homeRangeCardWrapper {
   display: grid;
   align-items: stretch;
   column-gap: 32px;
@@ -87,6 +88,30 @@ body {
   row-gap: 32px;
 }
 
+@media screen and (max-width: 769px) {
+  .homeRangeCardWrapper {
+    display: grid;
+    align-items: stretch;
+    gap: 24px 16px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 272px 272px auto auto auto repeat(1, 272px);
+  }
+}
+
+/* Hide scrollbar for WebKit-based browsers (Chrome, Safari) */
+.scrollbar_hide::-webkit-scrollbar {
+  width: 0.1rem;
+}
+
+/* Optional: You can also hide scrollbar track */
+.scrollbar_hide::-webkit-scrollbar-track {
+  display: none;
+}
+
+/* Optional: You can style the scrollbar thumb (the draggable part) */
+.scrollbar_hide::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
 
 .searchbar_placeholder::before {
   width: 73%;

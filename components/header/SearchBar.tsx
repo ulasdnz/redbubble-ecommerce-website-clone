@@ -62,11 +62,11 @@ const SearchBar = () => {
 
   return (
     <>
-      <div className="mr-5 ">
+      <div className="mr-5 max-sm:mr-0">
         <div className={styles.loop}>
           <input
             id="search"
-            className="z-10 w-full h-[56px] bg-[#f2f2f6]  outline-none p-4 popup 
+            className="z-10 w-full h-[56px] max-sm:h-[51px] bg-[#f2f2f6]  outline-none p-4 popup 
              focus:h-[56px]"
             value={inputValue}
             onChange={(e) => handleChange(e)}

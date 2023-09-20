@@ -15,13 +15,13 @@ const featuredProducts: React.FC<Props> = ({
   price,
 }) => {
   return (
-    <div className="w-[217px] mr-1 mt-4 rounded cursor-pointer">
+    <div className="w-[217px] mr-1 mt-4 rounded cursor-pointer max-sm:w-[310px] ">
       <div>
         <Image
           width={216}
           height={216}
           alt="Featured Product item image "
-          className="w-[216px] h-[216px] rounded"
+          className="w-[216px] h-[216px] rounded max-sm:w-[310px] max-sm:h-[310px]"
           src={src}
         />
       </div>

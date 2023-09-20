@@ -17,7 +17,7 @@ export default async function Home() {
           <Image
             width={0}
             height={0}
-            className="p-4 w-[100%] h-[552px] object-cover	"
+            className="p-4 w-[100%] h-[552px] object-cover	max-sm:p-0"
             src={Img}
             alt="homapage first image"
           />

@@ -2,8 +2,8 @@ import React from "react";
 
 const ButtonSvg = () => {
   return (
-    <>
-      <div className="w-12 h-12 flex items-center justify-center mr-1">
+    <div className="flex">
+      <div className="w-12 h-12 flex items-center justify-center mr-1 max-sm:-mr-2">
         <div
           className="w-6 h-6 p-3  hover:bg-[#F3F3F5] rounded-full cursor-pointer box-content
         active:border-[3px] active:top-[2px] active:px-[9px] active:border-solid active:border-[#AFA3F2] active:rounded-full
@@ -51,7 +51,7 @@ const ButtonSvg = () => {
           </a>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

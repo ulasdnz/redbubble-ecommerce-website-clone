@@ -37,10 +37,12 @@ const cards = () => {
     }
   };
   return (
-    <div className="mt-6 relative ">
+    <div className="mt-6 relative">
       <div
         ref={scrollContainerRef}
-        className=" pb-2 pl-1 flex flex-nowrap w-full justify-between overflow-hidden  scroll-smooth scrollbar-hide"
+        className=" pb-2 pl-1 flex flex-nowrap w-full justify-between  scroll-smooth
+        overflow-x-scroll scrollbar_hide
+        "
       >
         {getImages().map((item: any, i: number) => (
           <FeaturedArtistCard
@@ -52,7 +54,7 @@ const cards = () => {
         ))}
       </div>
       <div
-        className="absolute z-20 p-1 top-[44%] -right-5 bg-white rounded-full	search_popup_caruosel_arrow 
+        className="absolute z-20 p-1 top-[44%] -right-3 bg-white rounded-full	search_popup_caruosel_arrow 
                       cursor-pointer active:border-[3px] active:border-solid active:border-[#AFA3F2]
                       max-sm:hidden     "
         style={{
@@ -74,7 +76,7 @@ const cards = () => {
       </div>
       {showScroll ? (
         <div
-          className="absolute  z-20 p-1 top-[43%] -left-5 bg-white rounded-full	search_popup_caruosel_arrow 
+          className="absolute  z-20 p-1 top-[43%] -left-4 bg-white rounded-full	search_popup_caruosel_arrow 
                       cursor-pointer  active:border-[3px] active:border-solid active:border-[#AFA3F2]
                       max-sm:hidden "
           onClick={() => scrollLeftHandle()}

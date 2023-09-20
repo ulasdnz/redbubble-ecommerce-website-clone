@@ -9,7 +9,7 @@ const index = () => {
 
   return (
     <div className="flex justify-center pt-8 px-4 mt-8 pb-12 overflow-hidden">
-      <div className="w-full max-w-[1170px]">
+      <div className="w-full max-w-[1190px]">
         <Headline />
         <ToogleHead toggle={toggle} handleToggle={(bl:boolean)=> setToggle(bl)}/>
         <Cards toggle={toggle} />

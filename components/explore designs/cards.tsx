@@ -5,7 +5,7 @@ import getImages from "./getImages";
 
 const cards = () => {
   return (
-    <div className="flex gap-4">
+    <div className="flex gap-4 overflow-x-scroll scrollbar_hide">
       {Data.home.exploreDesigns.map((item, i) => (
         <ExploreDesignCard
           key={i}

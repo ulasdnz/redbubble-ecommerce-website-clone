@@ -12,7 +12,7 @@ const cards: React.FC<Props> = ({ toggle }) => {
   const data = getImages(toggle);
  
   return (
-    <div className="flex gap-4 ">
+    <div className="flex gap-4 overflow-x-scroll scrollbar_hide" >
       {data.images.map((image,i) => (
         <ExploreDesignCard
         key={i}

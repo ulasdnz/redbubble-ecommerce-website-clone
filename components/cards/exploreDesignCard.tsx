@@ -17,7 +17,7 @@ const exploreDesignCard: React.FC<Props> = ({
   productNumber,
 }) => {
   return (
-    <div className="relative w-[221px] mr-1 mt-4 rounded cursor-pointer">
+    <div className="relative w-[221px] mr-1 mt-4 rounded cursor-pointer shrink-0">
       <div>
         <Image
           width={220}

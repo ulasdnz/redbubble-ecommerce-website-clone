@@ -12,7 +12,7 @@ type Props = {
 
 const col: React.FC<Props> = ({ data, isSocialMedia }) => {
   return (
-    <div className="pr-8 w-full">
+    <div className="pr-8 w-full max-sm:mb-4">
       <div className="font-semibold py-1  leading-7">{data.title}</div>
       {data.items.map((item, i) => (
         <div key={i} className="py-1 leading-7 flex">

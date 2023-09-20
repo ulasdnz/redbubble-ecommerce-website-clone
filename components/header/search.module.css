@@ -19,6 +19,12 @@
   min-height: 56px !important;
   border-radius: 5px;
 }
+@media screen and (max-width: 769px) {
+  .loop {
+    max-height: 50px !important;
+  } 
+}
+
 
 @keyframes anim {
   0% {
