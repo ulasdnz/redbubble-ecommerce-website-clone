@@ -10,12 +10,12 @@ type Props = {
 const graySectionCard: React.FC<Props> = ({ svg, title, description }) => {
   return (
     <div
-      className="bg-white text-center w-[20%] box-content p-8 
+      className="bg-white text-center w-[20%] box-content p-8  cursor-pointer
     max-sm:flex max-sm:w-full  max-sm:max-w-full  max-sm:items-between  max-sm:border-b-[1px] max-sm:border-solid
     max-sm:border-[rgb(214,218,223)] max-sm:p-4  max-sm:py-5
     "
     >
-      <div className="flex justify-center shrink-0">
+      <div className="flex justify-center shrink-0 cursor-pointer">
         <Image
           src={svg}
           width={96}
@@ -24,7 +24,7 @@ const graySectionCard: React.FC<Props> = ({ svg, title, description }) => {
           className="max-sm:w-[64px] max-sm:h-auto "
         />
       </div>
-      <div className="max-sm:ml-4 w-full  max-sm:w-[calc(100%-120px)] max-sm:grow-1">
+      <div className="max-sm:ml-4 w-full  max-sm:w-[calc(100%-120px)] max-sm:grow-1 cursor-pointer">
         <div className="font-semibold mt-1 leading-6 max-sm:text-start max-sm:relative max-sm:text-sm">
           {title}
           <div className="hidden max-sm:inline-block max-sm:w-6 max-sm:h-6  absolute  -right-3  -top-2">
