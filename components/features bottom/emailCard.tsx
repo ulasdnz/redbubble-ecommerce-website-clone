@@ -6,7 +6,7 @@ import Arrow from "../../public/home/gray section/arrow.svg";
 const emailCard = () => {
   return (
     <div>
-      <div className="flex items-center">
+      <div className="flex items-center max-sm:justify-center">
         <div>
           <Image
             src={TagSvg}
@@ -16,7 +16,7 @@ const emailCard = () => {
             alt="Tags svg icon"
           />
         </div>
-        <div className="font-semibold ml-4 w-[238px]">
+        <div className="font-semibold ml-4 w-[238px] max-sm:w-[210px] ">
           10% off, promos, and the best indie art ever! Your Email
         </div>
       </div>
@@ -39,12 +39,12 @@ const emailCard = () => {
         </div>
       </div>
 
-      <div className=" w-[319pxpx] my-[11px] pl-3">
-        <p className="text-[11px] text-[#757195] w-[330px]"
+      <div className=" my-[11px] pl-3 ">
+        <p className="text-[11px] text-[#757195] w-[330px] max-sm:w-[300px]"
         >
           By submitting, you agree to our  &nbsp;
           <a
-            className="text-[#757195] font-bold w-[330px]"
+            className="text-[#757195] font-bold"
             href="https://www.redbubble.com/privacy"
             target="_blank"
           >

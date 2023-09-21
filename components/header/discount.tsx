@@ -4,9 +4,9 @@ const discount = () => {
   return (
     <div
       className="w-full h-[60px] bg-gradient-to-r from-[#755EED] to-[#5137DA] text-white leading-7	
-   flex items-center justify-center"
+   flex items-center justify-center max-sm:h-[54px] max-sm:leading-5 "
     >
-      <span className="text-xl">
+      <span className="text-xl max-sm:text-sm">
         Up to 40% off&nbsp;
         <a
           className="underline font-bold"
