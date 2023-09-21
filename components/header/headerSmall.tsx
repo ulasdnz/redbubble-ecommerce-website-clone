@@ -5,6 +5,7 @@ import Data from "../../data/data.json";
 import ButtonSvg from "../buttonSvg";
 import HeaderLogo from "./logo";
 import Discount from "./discount";
+import HamburgerMenu from "./hamburger/hamburgerMenu";
 
 const Header = () => {
   const [shouldFixed, setShouldFixed] = useState(false);
@@ -49,25 +50,17 @@ const Header = () => {
                   top: "0",
                   overflowY: "hidden",
                   left: "0",
-                  zIndex: 1,
+                  zIndex: 9999,
                   backgroundColor: "white",
                 }
               : {}
           }
           className="flex justify-between items-center pr-2 pl-4 pb-0 pt-1"
         >
-        <div className="flex">
-        <div className="w-6 h-6 mr-4 mt-[1px]">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-            >
-              <path d="M3 5h18a1 1 0 011 1 1 1 0 01-1 1H3a1 1 0 01-1-1 1 1 0 011-1zm0 6h18a1 1 0 011 1 1 1 0 01-1 1H3a1 1 0 01-1-1 1 1 0 011-1zm0 6h18a1 1 0 011 1 1 1 0 01-1 1H3a1 1 0 01-1-1 1 1 0 011-1z"></path>
-            </svg>
+          <div className="flex">
+            <HamburgerMenu/>
+            <HeaderLogo />
           </div>
-          <HeaderLogo />
-        </div>
           <ButtonSvg />
         </div>
         <div
@@ -77,14 +70,14 @@ const Header = () => {
                 ? {
                     position: "fixed",
                     top: "48px",
-                    zIndex:999,
+                    zIndex: 999,
                     left: "0",
                     backgroundColor: "white",
                   }
                 : {
                     position: "fixed",
                     top: "0",
-                    zIndex:999,
+                    zIndex: 999,
                     left: "0",
                     backgroundColor: "white",
                   }

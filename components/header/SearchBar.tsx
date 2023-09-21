@@ -105,13 +105,13 @@ const SearchBar = () => {
             >
               <div className="pt-6 flex justify-between ">
                 <TrendingSearches />
-                <div className="overflow-hidden   scroll-smooth scrollbar-hide pr-7 mb-4 ">
+                <div className="overflow-hidden scroll-smooth pr-7 mb-4 ">
                   <div className="text-[14px] font-semibold mb-4">
                     Top artists
                   </div>
                   <div
                     ref={scrollContainerRef}
-                    className="flex-[0_1_50%] overflow-hidden  transition-all	 scroll-smooth scrollbar-hide"
+                    className="flex-[0_1_50%] overflow-hidden scroll-smooth"
                   >
                     <TopArtists topArtists={Data.home.topArtists} />
                   </div>

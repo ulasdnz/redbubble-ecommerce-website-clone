@@ -71,7 +71,7 @@ const Header = () => {
                   top: "91px",
                   overflowY: "hidden",
                   left: "0",
-                  zIndex: 1,
+                  zIndex: -1,
                   backgroundColor: "white",
                 }
               : { position: "relative", marginTop: "92px", overflowY: "hidden" }
