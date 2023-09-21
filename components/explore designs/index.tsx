@@ -8,6 +8,11 @@ const index = () => {
       <div className="w-full max-w-[1180px]">
         <Headline />
         <Cards />
+        <div className="min-[767px]:hidden w-full flex justify-center">
+          <span className="bg-[rgba(233,233,240,0.6)] h-10 px-4 flex justify-center items-center rounded-full font-semibold">
+            See more
+          </span>
+        </div>
       </div>
     </div>
   );
