@@ -50,7 +50,7 @@ const Header = () => {
                   top: "0",
                   overflowY: "hidden",
                   left: "0",
-                  zIndex: -1,
+                  zIndex: 1,
                   backgroundColor: "white",
                 }
               : {}
@@ -78,12 +78,14 @@ const Header = () => {
                 ? {
                     position: "fixed",
                     top: "48px",
+                    zIndex:999,
                     left: "0",
                     backgroundColor: "white",
                   }
                 : {
                     position: "fixed",
                     top: "0",
+                    zIndex:999,
                     left: "0",
                     backgroundColor: "white",
                   }
