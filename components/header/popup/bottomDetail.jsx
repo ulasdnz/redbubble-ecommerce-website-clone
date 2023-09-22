@@ -2,7 +2,7 @@ import React from "react";
 
 const bottomDetail = () => {
   return (
-    <div className="mt-8 w-full flex justify-between">
+    <div className="mt-8 w-full flex justify-between max-sm:flex-col">
       <div className="pr-2">
         <div className="hover:bg-[#F3F3F5] p-1 flex py-[5px] cursor-pointer ">
           <div className="mt-1">

@@ -20,7 +20,7 @@ const populerProducts: React.FC<Props> = ({populerProducts}) => {
       <div className="text-[14px] font-semibold mb-3 mt-7">
         Popular products
       </div>
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-3 gap-4 max-sm:grid-cols-[repeat(1,minmax(0px,1fr))]">
         <PopupCard
           title="Masks"
           image={img1}

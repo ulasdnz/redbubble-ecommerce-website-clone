@@ -101,12 +101,16 @@ const SearchBar = () => {
           {isOpen ? (
             <div
               ref={popupRef}
-              className="py-2 mt-1 bg-white search_popup h-[780px] w-full z-[100000] absolute border-0 text-[#19124f]"
+              className="py-2 mt-1 bg-white search_popup h-[780px] w-full z-[100000] absolute border-0 text-[#19124f]
+              
+              max-sm:overflow-y-auto max-sm:h-[160px] "
             >
-              <div className="pt-6 flex justify-between ">
+              <div className="pt-6 flex justify-between 
+              max-sm:flex-col max-sm:pt-1 ">
                 <TrendingSearches />
-                <div className="overflow-hidden scroll-smooth pr-7 mb-4 ">
-                  <div className="text-[14px] font-semibold mb-4">
+                <div className="overflow-hidden scroll-smooth pr-7 mb-4 
+                max-sm:pl-5">
+                  <div className="text-[14px] font-semibold mb-4 max-sm:mt-6">
                     Top artists
                   </div>
                   <div
@@ -126,7 +130,7 @@ const SearchBar = () => {
               <div
                 className="absolute z-20 p-1 top-[105px] right-8 bg-white rounded-full	search_popup_caruosel_arrow 
                       cursor-pointer	active:right-11 active:border-[3px] active:border-solid active:border-[#AFA3F2]
-                      "
+                    max-sm:hidden  "
                 style={{
                   opacity: opacityOfArrow,
                   cursor: opacityOfArrow == 1 ? "pointer" : "not-allowed",
@@ -148,7 +152,7 @@ const SearchBar = () => {
                 <div
                   className="absolute  z-20 p-1 top-[105px] left-[320px] bg-white rounded-full	search_popup_caruosel_arrow 
                       cursor-pointer	active:left-[325px] active:border-[3px] active:border-solid active:border-[#AFA3F2]
-                      "
+                      max-sm:hidden"
                   onClick={() => scrollLeftHandle()}
                 >
                   <svg

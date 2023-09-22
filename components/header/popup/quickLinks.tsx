@@ -21,15 +21,17 @@ const quickLinks: React.FC<Props> = ({ quickLinks }) => {
   return (
     <div>
       <div className="text-[14px] font-semibold mb-3 mt-7">Quick links</div>
-      <div className="grid grid-cols-3 gap-4">
-        {quickLinks.map((item, i) => (
-          <PopupCardSm
-            key={i}
-            title={item.title}
-            image={images[i]}
-            backgroundColor={item.backgroundColor}
-          />
-        ))}
+      <div className="max-sm:overflow-x-auto">
+        <div className="grid grid-cols-3 gap-4 max-sm:overflow-x-auto max-sm:w-max max-sm:h-[180px] ">
+          {quickLinks.map((item, i) => (
+            <PopupCardSm
+              key={i}
+              title={item.title}
+              image={images[i]}
+              backgroundColor={item.backgroundColor}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

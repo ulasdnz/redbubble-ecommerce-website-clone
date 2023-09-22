@@ -3,8 +3,8 @@ import React from "react";
 const trendingSearches = () => {
   return (
     <div className="flex-[flex:1_0_auto] shrink-0 ">
-      <div className="flex flex-col   justify-center px-6">
-        <div className="leading-6	mb-2 pl-1  font-semibold">
+      <div className="flex flex-col   justify-center px-6 max-sm:px-3">
+        <div className="leading-6	mb-2 pl-1  font-semibold max-sm:text-sm">
           Trending searches
         </div>
         <div className="p-1">
