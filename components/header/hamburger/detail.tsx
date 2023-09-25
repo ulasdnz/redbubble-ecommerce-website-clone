@@ -11,7 +11,7 @@ type Props = {
 
 const detail: React.FC<Props> = ({ categoryIndex, setSelectedCategory }) => {
   return (
-    <div>
+    <div className="overflow-x-hidden ">
       <div
         className="relative w-[300px] h-[126px] hamburgerDetail"
         style={
@@ -29,10 +29,11 @@ const detail: React.FC<Props> = ({ categoryIndex, setSelectedCategory }) => {
             className="w-[300px] h-[126px] object-cover object-right "
           />
         ) : null}
-
         <div className="absolute z-10 bottom-4 left-4 ">
           <div
-            onClick={() => setSelectedCategory({ isSelected: false, index: categoryIndex })}
+            onClick={() =>
+              setSelectedCategory({ isSelected: false, index: categoryIndex })
+            }
             className="w-10 h-10 p-2 bg-white rounded-full mb-2"
           >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -46,6 +47,8 @@ const detail: React.FC<Props> = ({ categoryIndex, setSelectedCategory }) => {
             {Data.header.categories[categoryIndex].title}
           </div>
         </div>
+      </div>
+      <div>
         <div className="pb-8">
           {Data.header.categories[categoryIndex].elements.map((element, i) => (
             <DetailItem key={i} categoryName={element} />
