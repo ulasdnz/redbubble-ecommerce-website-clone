@@ -44,14 +44,14 @@ const janr: React.FC<Props> = ({ janr }) => {
   };
 
   return (
-    <div className="relative pr-5">
+    <div className="relative pr-5 pt-[3px]">
       <div
         ref={scrollContainerRef}
         className="flex items-center pl-4 pr-6 mt-[1px] overflow-x-scroll scrollbar_hide scroll-smooth"
       >
         {janr.map((item) => (
           <div
-            className="p-[9px] px-6  font-semibold flex text-center rounded mr-4 shrink-0"
+            className="p-[9px] flex justify-center shrink-0 min-w-[92px] rounded mr-4 font-semibold "
             style={{ backgroundColor: item.color }}
           >
             {item.name}

@@ -47,7 +47,7 @@ const Header = () => {
             ? { position: "fixed", top: "0", left: "0" }
             : { position: "relative" }
         }
-        className="bg-white w-full py-4 px-8 flex justify-center items-center "
+        className="bg-white w-full py-[14px] px-8 flex justify-center items-center "
       >
         <HeaderLogo />
         <div className="flex-1">

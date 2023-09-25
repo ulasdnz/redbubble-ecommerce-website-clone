@@ -2,7 +2,7 @@ import React from "react";
 
 const headline = () => {
   return (
-    <div className="flex justify-between px-4 pt-[11px]">
+    <div className="flex justify-between px-4 pt-3">
       <div className="flex items-center">
         <div>
           <div className="text-[#19124f] text-xl font-semibold">T-Shirts</div>
