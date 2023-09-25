@@ -40,14 +40,14 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="max-sm:hidden">
+    <header className="max-sm:hidden z-10 relative">
       <div
         style={
           shouldFixed
             ? { position: "fixed", top: "0", left: "0" }
             : { position: "relative" }
         }
-        className="bg-white w-full py-4 px-8 flex justify-center items-center"
+        className="bg-white w-full py-4 px-8 flex justify-center items-center "
       >
         <HeaderLogo />
         <div className="flex-1">
