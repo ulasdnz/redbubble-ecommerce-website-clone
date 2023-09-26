@@ -1,7 +1,6 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import ExploreDesignCard from "../cards/exploreDesignCard";
-import Data from "../../data/data.json";
 import getImages from "./getImages";
 
 type Props = {

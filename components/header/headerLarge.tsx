@@ -68,7 +68,7 @@ const Header = () => {
             ? shouldFixCategories
               ? {
                   position: "fixed",
-                  top: "91px",
+                  top: "88px",
                   overflowY: "hidden",
                   left: "0",
                   zIndex: -1,
