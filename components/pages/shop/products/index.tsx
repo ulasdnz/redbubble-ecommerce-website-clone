@@ -1,7 +1,7 @@
 import React from "react";
 import Headline from "./headline";
 import Janr from "./janr";
-import Data from "../../../data/data.json";
+import Data from "../../../../data/data.json";
 import Products from "./products";
 
 const index = () => {

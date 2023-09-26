@@ -64,7 +64,7 @@ body {
   99% {
     left: 300px;
   }
-  100%{
+  100% {
     left: 300px;
     display: none;
   }
@@ -108,7 +108,7 @@ body {
     box-sizing: content-box;
     background-color: white;
   }
-  100%{
+  100% {
     left: -300px;
     margin-left: 0;
     box-sizing: content-box;
@@ -226,6 +226,95 @@ body {
   background-color: transparent;
 }
 
+.inputRadio::before {
+  position: absolute;
+  z-index: 2;
+  background-color: white;
+  top: calc(50% - 4px);
+  left: calc(50% - 4px);
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 0 solid white;
+  border-radius: 50%;
+}
+
+.filterOpenArrow {
+  animation-name: filterOpenArrowAnimation;
+  animation-duration: 250ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation-iteration-count: initial;
+}
+.filterCloseArrow {
+  animation-name: filterCloseArrowAnimation;
+  animation-duration: 250ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation-iteration-count: initial;
+}
+
+@keyframes filterCloseArrowAnimation {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-180deg);
+  }
+}
+
+@keyframes filterOpenArrowAnimation {
+  0% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+.filterItemCLose {
+  animation-name: filterItemCLoseAnimation;
+  animation-duration: 100ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation-iteration-count: initial;
+}
+
+.filterItemOpen {
+  animation-name: filterItemOpenAnimation;
+  animation-duration: 250ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation-iteration-count: initial;
+}
+@keyframes filterItemOpenAnimation {
+  0% {
+    opacity: 0;
+    display: none;
+  }
+  50% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes filterItemCLoseAnimation {
+  0% {
+    opacity: 1;
+    transform: scaleY(0.8);
+  }
+  50% {
+    opacity: 0.3;
+    transform: scaleY(0.8);
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
 .searchbar_placeholder::before {
   width: 73%;
   overflow: hidden;
@@ -239,6 +328,7 @@ body {
   opacity: 0; */
   animation: placeholder 15s infinite;
 }
+
 @keyframes placeholder {
   0% {
     top: 0;

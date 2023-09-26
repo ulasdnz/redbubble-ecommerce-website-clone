@@ -1,12 +1,12 @@
 import React from "react";
-import Products from "@/components/pages/shop/index";
-import Filter from "@/components/pages/shop/filter";
+import Products from "@/components/pages/shop/products";
+import Filter from "@/components/pages/shop/filters";
 
 const page = () => {
   return (
     <div className="p-8">
       <div className="flex justify-center">
-        <Filter/>
+        <Filter />
         <Products />
       </div>
     </div>

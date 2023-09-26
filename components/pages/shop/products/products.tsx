@@ -1,4 +1,4 @@
-import Product from "../../cards/product";
+import Product from "../../../cards/product";
 
 type Product = {
   artistName: string;

@@ -836,48 +836,76 @@
       }
     ],
     "categories": {
-      "Gender": ["Everyone", "Men", "Women"],
-      "Style": [
-        "All Styles",
-        "Classic",
-        "Essential",
-        "Graphic",
-        "Active",
-        "Long Sleeve",
-        "V-Neck"
-      ],
-      "Size": ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"],
-      "Product Color": [
-        { "name": "Black", "code": "#101010" },
-        { "name": "Dark Grey", "code": "#36454F" },
-        { "name": "Grey", "code": "#B6B6B6" },
-        { "name": "Light Grey", "code": "#E0E1DD" },
-        { "name": "White", "code": "#FAFAFA" },
-        { "name": "Dark Red", "code": "#9A243E" },
-        { "name": "Red", "code": "#DD2121" },
-        { "name": "Green", "code": "#026541" },
-        { "name": "Army", "code": "#605E43" },
-        { "name": "Light Pink", "code": "#FBD2D7" },
-        { "name": "Purple", "code": "#541E68" },
-        { "name": "Yellow", "code": "#FFCF6E" },
-        { "name": "Navy", "code": "#322E3F" },
-        { "name": "Blue", "code": "#353D77" },
-        { "name": "Light Blue", "code": "#353D77" },
-        { "name": "Creme", "code": "#E5D6C5" },
-        { "name": "Brown", "code": "#33281F" },
-        {
-          "name": "Multicolor",
-          "code": "",
-          "src": "https://www.redbubble.com/boom/public/colorSwatchControl/multi-colour.jpg"
-        }
-      ],
-      "Neckline": ["Crew neck", "V-neck"],
-      "Sleeve Length": ["Short Sleeve", "Long Sleeve"],
-      "Price": [
-        { "name": "low", "symbol": "$" },
-        { "name": "medium", "symbol": "$$" },
-        { "name": "high", "symbol": "$$##" }
-      ]
+      "gender": {
+        "name": "Gander",
+        "modal": "circle",
+        "items": ["Everyone", "Men", "Women"]
+      },
+      "style": {
+        "name": "Style",
+        "modal": "circle",
+        "items": [
+          "All Styles",
+          "Classic",
+          "Essential",
+          "Graphic",
+          "Active",
+          "Long Sleeve",
+          "V-Neck"
+        ]
+      },
+      "size": {
+        "name": "Size",
+        "modal": "rectangle",
+        "items": ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"]
+      },
+      "color": {
+        "name": "Product Color",
+        "modal": "color",
+        "items": [
+          { "name": "Black", "code": "#101010" },
+          { "name": "Dark Grey", "code": "#36454F" },
+          { "name": "Grey", "code": "#B6B6B6" },
+          { "name": "Light Grey", "code": "#E0E1DD" },
+          { "name": "White", "code": "#FAFAFA" },
+          { "name": "Dark Red", "code": "#9A243E" },
+          { "name": "Red", "code": "#DD2121" },
+          { "name": "Green", "code": "#026541" },
+          { "name": "Army", "code": "#605E43" },
+          { "name": "Light Pink", "code": "#FBD2D7" },
+          { "name": "Purple", "code": "#541E68" },
+          { "name": "Yellow", "code": "#FFCF6E" },
+          { "name": "Navy", "code": "#322E3F" },
+          { "name": "Blue", "code": "#353D77" },
+          { "name": "Light Blue", "code": "#353D77" },
+          { "name": "Creme", "code": "#E5D6C5" },
+          { "name": "Brown", "code": "#33281F" },
+          {
+            "name": "Multicolor",
+            "code": "",
+            "src": "https://www.redbubble.com/boom/public/colorSwatchControl/multi-colour.jpg"
+          }
+        ]
+      },
+      "neckline": {
+        "name": "Neckline",
+        "modal": "rectangle",
+        "items": ["Crew neck", "V-neck"]
+      },
+      "sleeveLength": {
+        "name": "Sleeve Length",
+        "modal": "rectangle",
+        "items": ["Short Sleeve", "Long Sleeve"]
+      },
+      "price": {
+        "name": "Price",
+        "modal": "rectangle",
+        "items": [
+          { "name": "low", "symbol": "$" },
+          { "name": "medium", "symbol": "$$" },
+          { "name": "high", "symbol": "$$##" }
+        ]
+      }
     },
     "products": [
       {
