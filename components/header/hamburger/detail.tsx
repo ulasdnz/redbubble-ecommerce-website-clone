@@ -1,5 +1,4 @@
 import React from "react";
-import Images from "./getDetailImages";
 import Image from "next/image";
 import Data from "../../../data/data.json";
 import DetailItem from "./detailItem";
@@ -10,6 +9,10 @@ type Props = {
 };
 
 const detail: React.FC<Props> = ({ categoryIndex, setSelectedCategory }) => {
+  const images = Array.from({ length: 10 }, (_, number) => {
+    const ext = `img${number + 1}.jpg`;
+    return `/home/header/hamburger/detail/${ext}`; // Update the path as needed
+  })
   return (
     <div className="overflow-x-hidden ">
       <div
@@ -25,7 +28,7 @@ const detail: React.FC<Props> = ({ categoryIndex, setSelectedCategory }) => {
             width={300}
             height={126}
             alt="selected category image"
-            src={Images[categoryIndex]}
+            src={images[categoryIndex]}
             className="w-[300px] h-[126px] object-cover object-right "
           />
         ) : null}
