@@ -1,10 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import { StaticImageData } from "next/image";
 
 interface Props {
   name: string;
-  url: StaticImageData;
+  url: string;
 }
 
 const ArtistCard: React.FC<Props> = ({ name, url }) => {

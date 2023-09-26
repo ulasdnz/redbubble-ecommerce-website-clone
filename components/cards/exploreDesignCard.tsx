@@ -1,10 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import { StaticImageData } from "next/image";
 import HeartIcon from "../heartIcon";
 
 type Props = {
-  src: StaticImageData;
+  src: string;
   title: string;
   artistName: string;
   productNumber: string;

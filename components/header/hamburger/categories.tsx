@@ -1,13 +1,16 @@
 import React from "react";
 import CategoryItem from "./categoryItem";
 import Data from "../../../data/data.json";
-import Images from "./getCategoryImages";
 
 type Props = {
   setSelectedCategory: Function;
 };
 
 const categories: React.FC<Props> = ({ setSelectedCategory }) => {
+  const images = Array.from({ length: 11 }, (_, number) => {
+    const ext = `img${number + 1}.jpg`;
+    return `/home/header/hamburger/categories/${ext}`; // Update the path as needed
+  })
   return (
     <div className="bg-white overflow-y-auto">
       <div className="w-full h-auto bg-white">
@@ -24,7 +27,7 @@ const categories: React.FC<Props> = ({ setSelectedCategory }) => {
           key={i}
           index={i}
           setSelectedCategory={setSelectedCategory}
-          image={Images[i]}
+          image={images[i]}
           title={category.title}
         />
       ))}

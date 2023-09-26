@@ -3,12 +3,14 @@ import React, { useState, useRef } from "react";
 import GroupHeadline from "../groupHeadline";
 import FeaturedProductCard from "../cards/featuredProductCard";
 import Data from "../../data/data.json";
-import getFeaturedProductImages from "./getFeaturedProductImages";
 
 const index = () => {
   const [showScroll, setShowScroll] = useState(false);
   const [opacityOfArrow, setOpacityOfArrow] = useState(1);
-  const [images, setImages] = useState(getFeaturedProductImages())
+  const images = Array.from({ length: 46 }, (_, number) => {
+    const ext = `img${number + 1}.png`;
+    return `/home/featured%20products/${ext}`; // Update the path as needed
+  })
 
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 

@@ -9,12 +9,12 @@ const headline = () => {
         </div>
         <div className="text-[#757195] ml-2">122,584 Results</div>
       </div>
-      <div className="font-semibold">
+      <div className="font-semibold pr-[6px] pt-1">
         <select>
-          <option selected>Most Relevant</option>
-          <option>Trending</option>
-          <option>Newest</option>
-          <option>Best Selling</option>
+          <option selected>Most Relevant&nbsp;&nbsp;</option>
+          <option>Trending </option>
+          <option>Newest </option>
+          <option>Best Selling </option>
         </select>
       </div>
     </div>

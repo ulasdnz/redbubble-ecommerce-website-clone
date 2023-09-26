@@ -1,8 +1,8 @@
 import React from "react";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 
 type Props = {
-  image: StaticImageData;
+  image: string;
   title: string;
   index: number;
   setSelectedCategory: Function;

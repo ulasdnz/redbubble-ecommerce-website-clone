@@ -60,7 +60,7 @@ const janr: React.FC<Props> = ({ janr }) => {
       </div>
 
       <div
-        className="absolute p-1 top-0 right-6 bg-white rounded-full	search_popup_caruosel_arrow 
+        className="absolute p-1 top-[5px] right-[23px] bg-white rounded-full	search_popup_caruosel_arrow 
                       cursor-pointer active:border-[3px] active:border-solid active:border-[#AFA3F2]
                       max-sm:hidden     "
         style={{
@@ -82,7 +82,7 @@ const janr: React.FC<Props> = ({ janr }) => {
       </div>
       {showScroll ? (
         <div
-          className="absolute p-1 top-0 left-1 bg-white rounded-full	search_popup_caruosel_arrow 
+          className="absolute p-1 top-[5px] left-1 bg-white rounded-full	search_popup_caruosel_arrow 
                       cursor-pointer  active:border-[3px] active:border-solid active:border-[#AFA3F2]
                       max-sm:hidden "
           onClick={() => scrollLeftHandle()}
