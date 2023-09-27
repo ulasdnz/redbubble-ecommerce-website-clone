@@ -1,33 +1,85 @@
-"use client"
-import React, {useState } from "react";
+"use client";
+import React from "react";
 import Headline from "./headline";
 import CircleFilterItem from "./circleFilterItem";
 import RectangleFilterItem from "./rectangleFilterItem";
 import ColorFilterItem from "./colorFilterItem";
-import Data from "@/data/data.json";
 
-type Item = {
+type Color = {
   name: string;
   code: string;
   src: string;
 };
 
-const filter = () => {
-  const [colors, setColors] = useState<Item[]>([]);
-    
-  
-  const gender = Data.tshirts.categories.gender;
-  const style = Data.tshirts.categories.style;
-  const neckline = Data.tshirts.categories.neckline;
-  const color = Data.tshirts.categories.color;
+type Category = {
+  name: string;
+  modal: string;
+  items: string[];
+};
+type Props = {
+  gender: string;
+  setGender: (value: string) => void;
+  style: string;
+  setStyle: (value: string) => void;
+  neckline: string[];
+  setNeckline: (value:string[]) => void;
+  colors: Color[];
+  setColors: (color: Color[]) => void;
+  genderData: Category;
+  styleData: Category;
+  necklineData: Category;
+  colorData: {
+    name: string;
+    modal: string;
+    items: {
+      name: string;
+      code: string;
+      src: string;
+    }[];
+  };
+};
 
+const filter: React.FC<Props> = ({
+  gender,
+  setGender,
+  genderData,
+  styleData,
+  necklineData,
+  colors,
+  setColors,
+  colorData,
+  style,
+  setStyle,
+  neckline,
+  setNeckline
+}) => {
   return (
     <div className="w-[240px] mr-8 h-full shrink-0">
       <Headline filterNumber={1} />
-      <CircleFilterItem name={gender.name} items={gender.items} />
-      <CircleFilterItem name={style.name} items={style.items} />
-      <RectangleFilterItem name={neckline.name} items={neckline.items} />
-      <ColorFilterItem value={colors} setValue={(e:Item[])=>setColors(e)} name={color.name} items={color.items} />
+      <CircleFilterItem
+        value={gender}
+        setValue={(e: string) => setGender(e)}
+        name={genderData.name}
+        items={genderData.items}
+      />
+      <CircleFilterItem
+        value={style}
+        setValue={(e: string) => setStyle(e)}
+        name={styleData.name}
+        items={styleData.items}
+      />
+      <RectangleFilterItem
+        name={necklineData.name}
+        items={necklineData.items}
+        value={neckline}
+        setValue={setNeckline}
+      />
+      <ColorFilterItem
+        value={colors}
+        setValue={(e: Color[]) => setColors(e)}
+        name={colorData.name}
+        items={colorData.items}
+      />
     </div>
   );
 };

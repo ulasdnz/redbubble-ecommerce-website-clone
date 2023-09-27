@@ -1,16 +1,21 @@
 "use client";
 import React, { useState } from "react";
 import Circle from "./circle";
-import Rectangle from "./rectangle";
 
 type Props = {
   name: string;
   items: Array<string>;
+  value: string;
+  setValue: Function;
 };
 
-const circleFilterItem: React.FC<Props> = ({ name, items }) => {
+const circleFilterItem: React.FC<Props> = ({
+  name,
+  items,
+  value,
+  setValue,
+}) => {
   const [isOpen, setIsOpen] = useState<boolean>(true); //!! Change this to true
-  const [value, setValue] = useState(items[0]);
 
   const itemsClassName = isOpen
     ? "filterItemOpen mt-3"

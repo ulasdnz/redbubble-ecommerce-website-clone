@@ -5,11 +5,12 @@ import Rectangle from "./rectangle";
 type Props = {
   name: string;
   items: Array<string>;
+  value:string[];
+  setValue: (value:string[]) => void;
 };
 
-const circleFilterItem: React.FC<Props> = ({ name, items }) => {
+const rectangleFilterItem: React.FC<Props> = ({ name, items, value, setValue }) => {
   const [isOpen, setIsOpen] = useState<boolean>(true); //!! Change this to true
-  const [value, setValue] = useState("");
 
   const itemsClassName = isOpen
     ? "filterItemOpen mt-3"
@@ -37,7 +38,9 @@ const circleFilterItem: React.FC<Props> = ({ name, items }) => {
           </div>
         </div>
         {isOpen ? null : (
-          <div className="text-sm leading-6 text-start px-2">{value}</div>
+          <div className="text-sm leading-6 text-start px-2">
+            {value.join(", ")}
+          </div>
         )}
       </button>
       <div className={itemsClassName}>
@@ -45,14 +48,21 @@ const circleFilterItem: React.FC<Props> = ({ name, items }) => {
           <div
             key={i}
             className="flex mb-5 cursor-pointer"
-            onClick={() =>
-              setValue((prev) => {
-                if (prev === item) return "";
-                return item;
-              })
-            }
+            onClick={() => {
+              let isChecked = false;
+              value.map((e) => {
+                if (e === item) isChecked = true;
+              });
+              let colors = [...value];
+              if (isChecked) {
+                colors = [...colors.filter((e) => e !== item)];
+              } else {
+                colors.push(item);
+              }
+              setValue([...colors]);
+            }}
           >
-            <Rectangle checked={value === item} />
+            <Rectangle myValue={item} selectedItems={value} />
 
             <div className="ml-8">{item}</div>
           </div>
@@ -62,4 +72,4 @@ const circleFilterItem: React.FC<Props> = ({ name, items }) => {
   );
 };
 
-export default circleFilterItem;
+export default rectangleFilterItem;

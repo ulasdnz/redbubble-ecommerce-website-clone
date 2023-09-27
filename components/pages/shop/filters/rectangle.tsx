@@ -1,15 +1,22 @@
 import React from "react";
 
 type Props = {
-  checked: boolean;
+  myValue: string;
+  selectedItems: string[];
 };
 
-const circle: React.FC<Props> = ({ checked }) => {
+const circle: React.FC<Props> = ({ myValue, selectedItems }) => {
+  let isChecked = false;
+
+  selectedItems.map((item) => {
+    if (item == myValue) isChecked = true;
+  });
+
   return (
     <div className="relative ">
       <div
         style={
-          checked
+          isChecked
             ? {
                 backgroundColor: "#07002F",
                 border: "0px",
