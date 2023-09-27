@@ -10,7 +10,7 @@ const index = () => {
       <Janr janr={Data.tshirts.janr} />
       <Headline />
       <Products products={Data.tshirts.products} />
-    </div>
+    </div>    
   );
 };
 
