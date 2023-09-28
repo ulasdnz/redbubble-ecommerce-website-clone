@@ -1,8 +1,8 @@
 "use client";
 import React, { useState, useRef } from "react";
-import GroupHeadline from "../groupHeadline";
-import FeaturedProductCard from "../cards/featuredProductCard";
-import Data from "../../data/data.json";
+import GroupHeadline from "../../../groupHeadline";
+import FeaturedProductCard from "../../../cards/featuredProductCard";
+import Data from "../../../../data/data.json";
 
 const index = () => {
   const [showScroll, setShowScroll] = useState(false);
@@ -10,7 +10,7 @@ const index = () => {
   const images = Array.from({ length: 46 }, (_, number) => {
     const ext = `img${number + 1}.png`;
     return `/home/featured%20products/${ext}`; // Update the path as needed
-  })
+  });
 
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
@@ -44,7 +44,7 @@ const index = () => {
   let render: any = [];
   for (let i = 0; i < Data.home.featuredProducts.length; i = i + 2) {
     render.push(
-      <div key={i}> 
+      <div key={i}>
         <FeaturedProductCard
           src={images[i]}
           title={Data.home.featuredProducts[i].title}

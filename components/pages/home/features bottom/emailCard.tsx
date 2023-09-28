@@ -1,7 +1,7 @@
 import React from "react";
-import TagSvg from "../../public/home/gray section/tags.svg";
+import TagSvg from "@/public/home/gray section/tags.svg";
 import Image from "next/image";
-import Arrow from "../../public/home/gray section/arrow.svg";
+import Arrow from "@/public/home/gray section/arrow.svg";
 
 const emailCard = () => {
   return (

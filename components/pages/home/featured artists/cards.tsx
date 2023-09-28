@@ -1,8 +1,8 @@
 "use client";
 import React, { useState, useRef } from "react";
-import FeaturedArtistCard from "../cards/featuredArtistCard";
+import FeaturedArtistCard from "../../../cards/featuredArtistCard";
 import { getImages, getAvatars } from "./getFeaturedArtistImages";
-import Data from "../../data/data.json";
+import Data from "../../../../data/data.json";
 
 const cards = () => {
   const [showScroll, setShowScroll] = useState(false);

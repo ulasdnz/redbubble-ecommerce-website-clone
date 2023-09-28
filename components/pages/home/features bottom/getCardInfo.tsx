@@ -1,8 +1,8 @@
 import { StaticImageData } from "next/image";
-import svg1 from "../../public/home/gray section/svg1.svg";
-import svg2 from "../../public/home/gray section/svg2.svg";
-import svg3 from "../../public/home/gray section/svg3.svg";
-import svg4 from "../../public/home/gray section/svg4.svg";
+import svg1 from "@/public/home/gray section/svg1.svg";
+import svg2 from "@/public/home/gray section/svg2.svg";
+import svg3 from "@/public/home/gray section/svg3.svg";
+import svg4 from "@/public/home/gray section/svg4.svg";
 
 type CardInfo = {
     svg: StaticImageData;

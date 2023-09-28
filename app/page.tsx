@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Img from "../public/homepage_first.jpg";
-import ShopProductRange from "@/components/shop product range";
-import FeaturedProducts from "@/components/featured products";
-import ExploreDesigns from "@/components/explore designs";
-import FeatureArtists from "@/components/featured artists/index";
-import ShopFanArt from "@/components/shop fan art/index";
-import FeatureBottom from "@/components/features bottom/index";
+import ShopProductRange from "@/components/pages/home/shop product range";
+import FeaturedProducts from "@/components/pages/home/featured products";
+import ExploreDesigns from "@/components/pages/home/explore designs";
+import FeatureArtists from "@/components/pages/home/featured artists/index";
+import ShopFanArt from "@/components/pages/home/shop fan art/index";
+import FeatureBottom from "@/components/pages/home/features bottom/index";
 import Data from "../data/data.json";
 
 export default async function Home() {
@@ -21,14 +21,18 @@ export default async function Home() {
             alt="homapage first image"
           />
           <div className="absolute top-0 w-full flex flex-col items-center px-8 py-[80px]">
-            <div className="text-[56px] leading-[64px] min-w-[320px] font-semibold max-w-full w-[500px] text-center	mb-6
+            <div
+              className="text-[56px] leading-[64px] min-w-[320px] font-semibold max-w-full w-[500px] text-center	mb-6
             max-sm:text-4xl max-sm:leading-[48px] max-sm:mb-4 
-            ">
+            "
+            >
               Treat yourself to something awesome today
             </div>
-            <div className="max-w-[480px]  text-2xl text-center font-semibold	leading-8
+            <div
+              className="max-w-[480px]  text-2xl text-center font-semibold	leading-8
             max-sm:text-xl max-sm:leading-[30px]
-            ">
+            "
+            >
               Get up to 40% off your new favorite thing with code YOUDESERVEIT.
               Because you totally do.
             </div>

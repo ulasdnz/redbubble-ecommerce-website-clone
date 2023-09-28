@@ -1,5 +1,5 @@
 import React from "react";
-import GroupHeadline from "../groupHeadline";
+import GroupHeadline from "../../../groupHeadline";
 
 const headline = () => {
   return (

@@ -1,14 +1,14 @@
 import React from "react";
-import GroupHeadline from "../groupHeadline";
-import HomeRangeCard from "../cards/HomeRangeCard";
-import SvgCard from "../cards/svgCard";
-import SvgCardSmall from "../cards/svgCardSmall";
-import { StaticImageData } from "next/image"
-import svg1 from "../../public/home/Shop Product Range/svg1.svg"
-import svg2 from "../../public/home/Shop Product Range/svg2.svg"
-import svg3 from "../../public/home/Shop Product Range/svg3.svg"
+import GroupHeadline from "../../../groupHeadline";
+import HomeRangeCard from "../../../cards/HomeRangeCard";
+import SvgCard from "../../../cards/svgCard";
+import SvgCardSmall from "../../../cards/svgCardSmall";
+import { StaticImageData } from "next/image";
+import svg1 from "@/public/home/Shop Product Range/svg1.svg";
+import svg2 from "@/public/home/Shop Product Range/svg2.svg";
+import svg3 from "@/public/home/Shop Product Range/svg3.svg";
 
-const svgs: StaticImageData[] = [svg1, svg2, svg3]
+const svgs: StaticImageData[] = [svg1, svg2, svg3];
 
 type ImageCard = {
   buttonTitle: string;
@@ -25,8 +25,8 @@ type Props = {
 const index: React.FC<Props> = ({ imageCards, svgCards }) => {
   const images = Array.from({ length: 12 }, (_, number) => {
     const ext = `img${number + 1}.jpg`;
-    return `/home/Shop%20Product%20Range/${ext}` // Update the path as needed
-  })
+    return `/home/Shop%20Product%20Range/${ext}`; // Update the path as needed
+  });
   return (
     <div className="flex justify-center">
       <div className="px-4 pt-4 w-full max-w-[1180px]">

@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import GraySectionCard from "../cards/graySectionCard";
+import GraySectionCard from "../../../cards/graySectionCard";
 import getCardInfo from "./getCardInfo";
 import { StaticImageData } from "next/image";
 
