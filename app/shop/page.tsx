@@ -51,6 +51,17 @@ const page = () => {
       );
       filteredProducts = [...temp];
     }
+     if(neckline.length > 0) {
+      const temp = filteredProducts.filter((product: ProductType) => {
+        let includes: boolean = false;
+        neckline.map((neck) => {
+          if (neck === product.neckline) includes = true;
+        });
+        return includes;
+      });
+      filteredProducts = [...temp];
+    }
+
     if (colors.length > 0) {
       const temp = filteredProducts.filter((product: ProductType) => {
         let includes: boolean = false;
@@ -63,7 +74,7 @@ const page = () => {
     }
 
     setProductData([...filteredProducts])
-  }, [colors, style, gender]);
+  }, [colors, neckline,style, gender]);
 
   return (
     <div className="p-8">
