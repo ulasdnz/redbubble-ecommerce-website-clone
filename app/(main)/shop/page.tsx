@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import Products from "@/components/pages/shop/products";
 import Filter from "@/components/pages/shop/filters";
-import Data from "../../data/data.json";
+import Data from "../../../data/data.json";
 
 const categories = Data.tshirts.categories;
 const productUnfiltered = Data.tshirts.products;
@@ -51,7 +51,7 @@ const page = () => {
       );
       filteredProducts = [...temp];
     }
-     if(neckline.length > 0) {
+    if (neckline.length > 0) {
       const temp = filteredProducts.filter((product: ProductType) => {
         let includes: boolean = false;
         neckline.map((neck) => {
@@ -73,8 +73,8 @@ const page = () => {
       filteredProducts = [...temp];
     }
 
-    setProductData([...filteredProducts])
-  }, [colors, neckline,style, gender]);
+    setProductData([...filteredProducts]);
+  }, [colors, neckline, style, gender]);
 
   return (
     <div className="p-8">

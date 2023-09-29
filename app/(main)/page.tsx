@@ -1,12 +1,12 @@
 import Image from "next/image";
-import Img from "../public/homepage_first.jpg";
+import Img from "@/public/homepage_first.jpg";
 import ShopProductRange from "@/components/pages/home/shop product range";
 import FeaturedProducts from "@/components/pages/home/featured products";
 import ExploreDesigns from "@/components/pages/home/explore designs";
 import FeatureArtists from "@/components/pages/home/featured artists/index";
 import ShopFanArt from "@/components/pages/home/shop fan art/index";
 import FeatureBottom from "@/components/pages/home/features bottom/index";
-import Data from "../data/data.json";
+import Data from "../../data/data.json";
 
 export default async function Home() {
   return (

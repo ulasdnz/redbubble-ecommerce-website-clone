@@ -56,7 +56,7 @@ const Header = () => {
 
         <div className="text-base flex items-center justify-center font-semibold color-[#19124f] mr-4">
           {Data.header.links.map((link, i) => (
-            <Button title={link} key={i * 99} />
+            <Button src={link.link} title={link.title} key={i * 99} />
           ))}
         </div>
         <ButtonSvg />

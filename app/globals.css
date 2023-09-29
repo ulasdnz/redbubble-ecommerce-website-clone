@@ -20,7 +20,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Inter, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;  
 }
 .hamburgerDetail::before {
   position: absolute;
@@ -314,6 +314,17 @@ body {
     display: none;
   }
 }
+
+.loginSearchLogo::before{
+content: "";
+position: absolute;
+top: calc(50% - 16px);
+left: 0;
+height: 32px;
+width: 1px;
+background-color: #D6DADF;
+}
+
 
 .searchbar_placeholder::before {
   width: 73%;

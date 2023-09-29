@@ -147,7 +147,16 @@
         "isLastOne": true
       }
     ],
-    "links": ["Sell your art", "Login", "Signup"]
+    "links": [{
+      "title":"Sell your art",
+      "link":"/"
+    }, {
+      "title":"Login",
+      "link":"/auth/login"
+    },{
+      "title":"Signup",
+      "link":"/auth/signup"
+    }  ]
   },
   "home": {
     "shopProductRange": {

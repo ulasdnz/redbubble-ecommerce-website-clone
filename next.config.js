@@ -7,6 +7,7 @@ const nextConfig = {
       "images.ctfassets.net",
       "ih1.redbubble.net",
       "www.redbubble.com",
+      "d1ielco78gv5pf.cloudfront.net"
     ],
   },
 };
