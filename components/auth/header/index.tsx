@@ -27,8 +27,8 @@ const index = () => {
       </div>
       <div className="w-full h-[50px] flex bg-[#F2F2F6] justify-end items-center pr-4">
         <div className="mr-4">Sell Your Art</div>
-        <div className="mr-4">Log In</div>
-        <div>Sign Up</div>
+        <a href="/auth/login"><span className="mr-4">Log In</span></a>
+        <a href="/auth/signup"><span className="mr-4">Sign Up</span></a>
       </div>
       <div className="w-full h-[85px]  flex justify-center items-center border-b-[1px] border-solid border-[#F2F2F6]">
         <div className="w-[200px] h-auto -ml-6">

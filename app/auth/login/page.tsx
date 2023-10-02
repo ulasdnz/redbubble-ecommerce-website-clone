@@ -38,6 +38,7 @@ const page = () => {
           <FormControlLabel
             control={<Checkbox defaultChecked />}
             label="Remember Me"
+            style={{fontSize:"14px"}}
           />
           <div>Lost Password?</div>
         </div>
