@@ -7,17 +7,19 @@ import Button from "../button";
 import ButtonSvg from "../buttonSvg";
 import HeaderLogo from "./logo";
 import Discount from "./discount";
+import Profile from "./profile";
 
 const Header = () => {
   const [shouldFixed, setShouldFixed] = useState(false);
   const [shouldFixCategories, setShouldFixCategories] = useState<boolean>(true);
   const lastPosition = useRef(0);
 
+  const read = window.localStorage.getItem("auth");
+  const auth = read && read.trim() == "true" ? true : false;
+
   const handleScroll = () => {
     const scrolledY = window.scrollY;
     const before = lastPosition.current;
-    console.log("scrolledY ", scrolledY);
-    console.log("lastScrollY ", lastPosition.current);
 
     if (scrollY >= 60) {
       const bl = before - scrolledY > 0 ? true : false;
@@ -53,12 +55,14 @@ const Header = () => {
         <div className="flex-1">
           <SearchBar />
         </div>
-
-        <div className="text-base flex items-center justify-center font-semibold color-[#19124f] mr-4">
-          {Data.header.links.map((link, i) => (
-            <Button src={link.link} title={link.title} key={i * 99} />
-          ))}
-        </div>
+        {!auth ? (
+          <div className="text-base flex items-center justify-center font-semibold color-[#19124f] mr-4">
+            {Data.header.links.map((link, i) => (
+              <Button src={link.link} title={link.title} key={i * 99} />
+            ))}
+          </div>
+        ) : null}
+        {auth ? <Profile /> : null}
         <ButtonSvg />
       </div>
 
@@ -74,7 +78,11 @@ const Header = () => {
                   zIndex: -1,
                   backgroundColor: "white",
                 }
-              : { position: "relative", marginTop: "92px", overflowY: "hidden" }
+              : {
+                  position: "relative",
+                  marginTop: "92px",
+                  overflowY: "hidden",
+                }
             : { position: "relative" }
         }
         className=" w-full h-[54px] max-[1157px]:h-[80px] flex justify-between items-center px-8 search_link_items 
@@ -95,7 +103,7 @@ const Header = () => {
       {shouldFixed && shouldFixCategories ? (
         <div className="pt-[200px]"></div>
       ) : null}
-      <Discount />
+      {!auth ? <Discount /> : null}
     </header>
   );
 };
