@@ -1,9 +1,9 @@
 "use client";
 import React, { useState, useRef } from "react";
 import styles from "./search.module.css";
-import UseClickOutside from "../../hooks/useOutsideClick";
+import UseClickOutside from "@/hooks/useOutsideClick";
+import Data from "@/data/data.json";
 import TopArtists from "./popup/topArtists";
-import Data from "../../data/data.json";
 import PopulerProducts from "./popup/populerProducts";
 import QuickLinks from "./popup/quickLinks";
 import TrendingSearches from "./popup/trendingSearches";

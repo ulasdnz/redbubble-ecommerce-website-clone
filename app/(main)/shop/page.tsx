@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import Products from "@/components/pages/shop/products";
 import Filter from "@/components/pages/shop/filters";
-import Data from "../../../data/data.json";
+import Data from "@/data/data.json";
 
 const categories = Data.tshirts.categories;
 const productUnfiltered = Data.tshirts.products;
