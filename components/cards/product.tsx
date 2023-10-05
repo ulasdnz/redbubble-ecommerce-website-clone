@@ -10,7 +10,6 @@ type Props = {
   productNumber: number;
 };
 
-
 const addToCard = ({ src, title, artistName, productNumber: price }: Props) => {
   const numberOfItems = window.localStorage.getItem("totalItemNumber");
 
@@ -54,6 +53,9 @@ const addToCard = ({ src, title, artistName, productNumber: price }: Props) => {
       window.localStorage.setItem("count" + index, newCount.toString());
     }
   }
+
+  window.dispatchEvent(new Event("storage")); //!! event listener anca böyle fire ediyor çünkü "storage" event'i sadece
+  //!! başka tablerde local storage değişirse fire oluyordu. Bu fonksiyonla artık mecbur aynı tab'de de fire edecek.
 };
 
 const exploreDesignCard: React.FC<Props> = ({

@@ -1,6 +1,33 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
+import getProducts from "@/hooks/getProducts";
 
 const ButtonSvg = () => {
+  const [itemNumber, setItemNumber] = useState(0);
+
+  useEffect(() => {
+    const listener = () => {
+      const numberOfItems = window.localStorage.getItem("totalItemNumber");
+
+      if (numberOfItems != undefined || numberOfItems != null) {
+        const currentProductNumber = parseInt(numberOfItems);
+        const products = getProducts(currentProductNumber);
+        let totalItemNumber = 0;
+
+        products.map((product: any) => {
+          totalItemNumber += product.count;
+        });
+        setItemNumber(totalItemNumber);
+      }
+    };
+    window.addEventListener("storage", listener); //!! normalde sadece başka tab'de local storage update olursa fire eder.
+    listener();
+
+    return () => {
+      window.removeEventListener("storage", listener);
+    };
+  }, []);
+
   return (
     <div className="flex">
       <div className="w-12 h-12 flex items-center justify-center mr-1 max-sm:-mr-2">
@@ -36,7 +63,7 @@ const ButtonSvg = () => {
             data-testid="ds-header-cart-link"
           >
             <span>
-              <span>
+              <span className="relative">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -46,6 +73,15 @@ const ButtonSvg = () => {
                   <circle cx="17" cy="20" r="2"></circle>
                   <path d="M18 17H6a1 1 0 01-1-.79L2.19 3H1a1 1 0 010-2h2a1 1 0 011 .79L6.81 15h10.37l1.6-8H5a1 1 0 01-1-1c0-.55-.55-1 0-1h16a1 1 0 01.77.37 1 1 0 01.23.83l-2 10a1 1 0 01-1 .8z"></path>
                 </svg>
+                {itemNumber > 0 ? (
+                  <div
+                    className="absolute -top-[14px] -right-[14px]  border-2 border-solid border-[#FF596F]
+                bg-[#FF596F] text-xs font-semibold text-white rounded-full  pr-1 pl-[5px]
+                "
+                  >
+                    {itemNumber}
+                  </div>
+                ) : null}
               </span>
             </span>
           </a>
