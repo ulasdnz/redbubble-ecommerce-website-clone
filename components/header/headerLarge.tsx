@@ -24,14 +24,12 @@ const Header = () => {
     if (scrollY >= 60) {
       const bl = before - scrolledY > 0 ? true : false;
       setShouldFixCategories(bl);
-      console.log(bl);
       setShouldFixed(true);
     } else {
       setShouldFixCategories(false);
       setShouldFixed(false);
     }
     lastPosition.current = scrolledY;
-    console.log(shouldFixCategories);
   };
 
   useEffect(() => {
