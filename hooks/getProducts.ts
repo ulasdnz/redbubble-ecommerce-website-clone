@@ -12,7 +12,7 @@ export default (currentProductNumber: number): any => {
           src,
           title,
           artist,
-          price: parseInt(price),
+          price: parseFloat(price),
           count: parseInt(count),
         };
         products.push(product);
