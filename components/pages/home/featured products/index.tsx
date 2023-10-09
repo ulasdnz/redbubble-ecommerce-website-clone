@@ -22,8 +22,6 @@ const index = () => {
       if (scrollContainer.scrollLeft + 930 >= maxScrollLeft) {
         setOpacityOfArrow(0.4);
       }
-      scrollContainer.style.transition =
-        "scroll-left 0.5s cubic-bezier(0.4, 0, 0.2, 1)";
       scrollContainer.scrollLeft += 930;
       setShowScroll(true);
     }
