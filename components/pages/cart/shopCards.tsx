@@ -1,43 +1,66 @@
 "use client";
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import ShopCard from "@/components/cards/shopCard";
-import Data from "@/data/data.json";
 import getProducts from "@/hooks/getProducts";
 
+type Product = {
+  src:string
+  title:string
+  artist:string
+  price: number
+  count: number
+}
 
 const shopCards = () => {
-  const [selectedProducts, setSelectedProducts] = useState([])
+  const [selectedProducts, setSelectedProducts] = useState<Product[]>([]);
 
-  const products = Data.tshirts.products;
-  const prod = products[22];
-  const prod2 = products[23]
+  useEffect(() => {
+    const listener = () => {
+      const products = getProducts();
+      setSelectedProducts(products);
+    };
+    window.addEventListener("storage", listener); //!! normalde sadece başka tab'de local storage update olursa fire eder.
+    listener();
 
+    return () => {
+      window.removeEventListener("storage", listener);
+    };
+  }, []);
 
-  useEffect(()=>{
+  const handleItemNumberChange = (
+    index: number,
+    oldCount: number,
+    newCount: number
+  ) => {
     const numberOfItems = window.localStorage.getItem("totalItemNumber");
-
-    if (numberOfItems != undefined || numberOfItems != null) {
-      const currentProductNumber = parseInt(numberOfItems);
-      const products = getProducts(currentProductNumber);
-      setSelectedProducts(products)
+    const numberDiff = newCount - oldCount;
+    
+    if (numberOfItems != null) {
+      selectedProducts[index].count = newCount;
+      const newNumberOfItems = numberOfItems + numberDiff
+      window.localStorage.setItem("totalItemNumber", newNumberOfItems.toString());
+      window.localStorage.setItem("count"+(index+1), newCount.toString());
+      
+      window.dispatchEvent(new Event("storage"))
     }
-  
-  },[])
-  
+  };
+
   return (
     <div className="mt-8">
-        {
-            selectedProducts.map((product:any) => <ShopCard
-                src={product.src}
-                title={product.title}
-                artistName={product.artistName}
-                price={product.price}
-                itemNumber={product.count}
-                handleItemNumberChange={() => {}}
-                handleDeleteItem={() => {}}
-              />)
-        }
-
+      {selectedProducts.map((product: any, i: number) => (
+        <ShopCard
+          key={i}
+          src={product.src}
+          title={product.title}
+          artistName={product.artist}
+          price={product.price}
+          itemNumber={product.count}
+          handleItemNumberChange={(newCount: number) =>
+            handleItemNumberChange(i, product.count, newCount)
+          }
+          handleDeleteItem={() => {}}
+        />
+      ))}
     </div>
   );
 };

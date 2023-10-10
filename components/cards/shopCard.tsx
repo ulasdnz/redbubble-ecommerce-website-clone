@@ -9,7 +9,7 @@ type Props = {
   itemNumber: number;
   price: number;
   handleItemNumberChange: (newCount: number) => void;
-  handleDeleteItem: (itemSrc:string) => void
+  handleDeleteItem: (itemSrc: string) => void;
 };
 
 const shopCard: React.FC<Props> = ({
@@ -18,6 +18,7 @@ const shopCard: React.FC<Props> = ({
   artistName,
   price,
   itemNumber,
+  handleItemNumberChange,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -46,7 +47,8 @@ const shopCard: React.FC<Props> = ({
   return (
     <div
       ref={scrollContainerRef}
-      className="w-full overflow-hidden scroll-smooth flex justify-between py-6 border-t-[1px] border-[#D6DADF] borders-solid "
+      className="w-full overflow-hidden scroll-smooth flex justify-between pb-3 pt-6 border-t-[1px] border-[#D6DADF] borders-solid "
+      style={isOpen ? { backgroundColor: "#F9F9FB" } : {}}
     >
       <div className="flex">
         <Image
@@ -54,6 +56,7 @@ const shopCard: React.FC<Props> = ({
           height={128}
           alt="selected product image"
           src={src}
+          className="w-[128px] h-[128px]"
         />
         <div className="flex flex-col max-w-[175px] ml-4">
           <div className="text-base font-semibold leading-7">{title}</div>
@@ -61,7 +64,18 @@ const shopCard: React.FC<Props> = ({
         </div>
       </div>
       <div className="flex h-12 items-center">
-        <div className="w-8 h-8 rounded-full bg-[rgba(233,233,240,0.6)] p-1 mr-1 cursor-pointer">
+        <div
+          onClick={() => {
+            if (isOpen) return;
+            if (itemNumber - 1 < 1) {
+              setIsOpen(true);
+              scrollRightHandle();
+              return;
+            }
+            handleItemNumberChange(itemNumber - 1);
+          }}
+          className="w-8 h-8 rounded-full bg-[rgba(233,233,240,0.6)] p-1 mr-1 cursor-pointer"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -72,10 +86,21 @@ const shopCard: React.FC<Props> = ({
         </div>
         <input
           value={itemNumber}
+          onChange={(e) => {
+            if (e.target.value == "") return;
+            const newCount = parseInt(e.target.value);
+            if (newCount < 1) return setIsOpen(true);
+            handleItemNumberChange(newCount);
+          }}
           className="mr-1 pl-[19px] py-2 w-[52px] h-[40px] border-2 
                      border-[#D6DADF] outline-[#AFA3F2] border-solid rounded-lg"
         ></input>
-        <div className="w-8 h-8 p-1 rounded-full bg-[rgba(233,233,240,0.6)] cursor-pointer">
+        <div
+          onClick={() => {
+            if (!isOpen) handleItemNumberChange(itemNumber + 1);
+          }}
+          className="w-8 h-8 p-1 rounded-full bg-[rgba(233,233,240,0.6)] cursor-pointer"
+        >
           <svg
             viewBox="0 0 24 24"
             fill="currentColor"
@@ -88,10 +113,12 @@ const shopCard: React.FC<Props> = ({
       </div>
       <div className="text-center">
         <div>
-          <del className="text-[#757195] leading-7">${price}</del>
+          <del className="text-[#757195] leading-7">
+            ${(price * itemNumber).toFixed(2)}
+          </del>
         </div>
         <div className="font-semibold text-[#755EED] leading-7">
-          ${(price * 0.8).toFixed(2)}
+          ${(price * itemNumber * 0.8).toFixed(2)}
         </div>
       </div>
       <div
@@ -108,9 +135,11 @@ const shopCard: React.FC<Props> = ({
           ></path>
         </svg>
       </div>
-      <div className="flex justify-center items-center text-white font-semibold cursor-pointer
-      -mr-[195px] w-[140px] h-[150px] bg-red-500">
-      Remove
+      <div
+        className="flex justify-center items-center text-white font-semibold cursor-pointer
+      -mr-[195px] -mt-10 w-[140px] h-[175px] bg-red-500"
+      >
+        Remove
       </div>
     </div>
   );
