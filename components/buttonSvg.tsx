@@ -7,18 +7,14 @@ const ButtonSvg = () => {
 
   useEffect(() => {
     const listener = () => {
-      const numberOfItems = window.localStorage.getItem("totalItemNumber");
+      const products = getProducts();
+      if(products.length <1) return
+      let totalItemNumber = 0;
 
-      if (numberOfItems != undefined || numberOfItems != null) {
-        const currentProductNumber = parseInt(numberOfItems);
-        const products = getProducts(currentProductNumber);
-        let totalItemNumber = 0;
-
-        products.map((product: any) => {
-          totalItemNumber += product.count;
-        });
-        setItemNumber(totalItemNumber);
-      }
+      products.map((product: any) => {
+        totalItemNumber += product.count;
+      });
+      setItemNumber(totalItemNumber);
     };
     window.addEventListener("storage", listener); //!! normalde sadece başka tab'de local storage update olursa fire eder.
     listener();

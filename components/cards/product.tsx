@@ -22,7 +22,7 @@ const addToCard = ({ src, title, artistName, productNumber: price }: Props) => {
     window.localStorage.setItem("price1", price.toString());
   } else {
     const currentProductNumber = parseInt(numberOfItems);
-    const products = getProducts(currentProductNumber);
+    const products = getProducts();
     const updateNumberOfItems = currentProductNumber + 1;
 
     let includes = false;

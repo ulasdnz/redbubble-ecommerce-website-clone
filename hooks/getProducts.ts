@@ -1,6 +1,10 @@
-export default (currentProductNumber: number): any => {
-    const products = [];
+export default (): any => {
+  const numberOfItems = window.localStorage.getItem("totalItemNumber");
   
+  if (numberOfItems != undefined || numberOfItems != null) { 
+    const currentProductNumber = parseInt(numberOfItems);
+    const products = [];
+
     for (let i = 1; i <= currentProductNumber; i++) {
       const count = window.localStorage.getItem("count" + i);
       const src = window.localStorage.getItem("src" + i);
@@ -18,7 +22,8 @@ export default (currentProductNumber: number): any => {
         products.push(product);
       }
     }
-  
     return products;
-  };
+  }
+  return []
   
+};
