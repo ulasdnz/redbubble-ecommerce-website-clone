@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import AddToCardIcon from "../addToCardIcon";
-import getProducts from "@/hooks/getProducts";
+import getProducts from "@/utils/getProducts";
 
 type Props = {
   src: string;

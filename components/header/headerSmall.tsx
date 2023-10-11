@@ -1,7 +1,6 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
 import SearchBar from "./SearchBar";
-import Data from "../../data/data.json";
 import ButtonSvg from "../buttonSvg";
 import HeaderLogo from "./logo";
 import Discount from "./discount";

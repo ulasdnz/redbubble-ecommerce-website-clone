@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useRef } from "react";
 import Image from "next/image";
-import UseClickOutside from "@/hooks/useOutsideClick";
+import UseClickOutside from "@/utils/useOutsideClick";
 
 const profile = () => {
   const [isOpen, setIsOpen] = useState(false);

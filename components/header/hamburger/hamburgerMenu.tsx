@@ -2,7 +2,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import Categories from "./categories";
 import Detail from "./detail";
-import UseClickOutside from "@/hooks/useOutsideClick";
+import UseClickOutside from "@/utils/useOutsideClick";
 
 type Selection = {
   isSelected: boolean;

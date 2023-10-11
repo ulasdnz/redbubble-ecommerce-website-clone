@@ -1,15 +1,15 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import ShopCard from "@/components/cards/shopCard";
-import getProducts from "@/hooks/getProducts";
+import getProducts from "@/utils/getProducts";
 
 type Product = {
-  src:string
-  title:string
-  artist:string
-  price: number
-  count: number
-}
+  src: string;
+  title: string;
+  artist: string;
+  price: number;
+  count: number;
+};
 
 const shopCards = () => {
   const [selectedProducts, setSelectedProducts] = useState<Product[]>([]);
@@ -34,14 +34,17 @@ const shopCards = () => {
   ) => {
     const numberOfItems = window.localStorage.getItem("totalItemNumber");
     const numberDiff = newCount - oldCount;
-    
+
     if (numberOfItems != null) {
       selectedProducts[index].count = newCount;
-      const newNumberOfItems = numberOfItems + numberDiff
-      window.localStorage.setItem("totalItemNumber", newNumberOfItems.toString());
-      window.localStorage.setItem("count"+(index+1), newCount.toString());
-      
-      window.dispatchEvent(new Event("storage"))
+      const newNumberOfItems = numberOfItems + numberDiff;
+      window.localStorage.setItem(
+        "totalItemNumber",
+        newNumberOfItems.toString()
+      );
+      window.localStorage.setItem("count" + (index + 1), newCount.toString());
+
+      window.dispatchEvent(new Event("storage"));
     }
   };
 

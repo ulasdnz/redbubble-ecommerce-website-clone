@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import getProducts from "@/hooks/getProducts";
+import getProducts from "@/utils/getProducts";
 
 const ButtonSvg = () => {
   const [itemNumber, setItemNumber] = useState(0);
@@ -8,7 +8,7 @@ const ButtonSvg = () => {
   useEffect(() => {
     const listener = () => {
       const products = getProducts();
-      if(products.length <1) return
+      if (products.length < 1) return;
       let totalItemNumber = 0;
 
       products.map((product: any) => {
