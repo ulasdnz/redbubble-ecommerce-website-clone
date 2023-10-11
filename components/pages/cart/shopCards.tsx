@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import ShopCard from "@/components/cards/shopCard";
 import getProducts from "@/utils/getProducts";
+import setProducts from "@/utils/setProducts";
 
 type Product = {
   src: string;
@@ -61,7 +62,7 @@ const shopCards = () => {
           handleItemNumberChange={(newCount: number) =>
             handleItemNumberChange(i, product.count, newCount)
           }
-          handleDeleteItem={() => {}}
+          handleDeleteItem={() => setProducts(selectedProducts.toSpliced(i, 1))}
         />
       ))}
     </div>

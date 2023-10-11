@@ -9,7 +9,7 @@ type Props = {
   itemNumber: number;
   price: number;
   handleItemNumberChange: (newCount: number) => void;
-  handleDeleteItem: (itemSrc: string) => void;
+  handleDeleteItem: () => void;
 };
 
 const shopCard: React.FC<Props> = ({
@@ -19,6 +19,7 @@ const shopCard: React.FC<Props> = ({
   price,
   itemNumber,
   handleItemNumberChange,
+  handleDeleteItem,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -47,7 +48,7 @@ const shopCard: React.FC<Props> = ({
   return (
     <div
       ref={scrollContainerRef}
-      className="w-full overflow-hidden scroll-smooth flex justify-between pb-3 pt-6 border-t-[1px] border-[#D6DADF] borders-solid "
+      className="w-full overflow-hidden scroll-smooth flex justify-between pt-6 border-t-[1px] border-[#D6DADF] borders-solid "
       style={isOpen ? { backgroundColor: "#F9F9FB" } : {}}
     >
       <div className="flex">
@@ -75,6 +76,7 @@ const shopCard: React.FC<Props> = ({
             handleItemNumberChange(itemNumber - 1);
           }}
           className="w-8 h-8 rounded-full bg-[rgba(233,233,240,0.6)] p-1 mr-1 cursor-pointer"
+          style={isOpen ? { backgroundColor: "#F0F0F4" } : {}}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -85,6 +87,7 @@ const shopCard: React.FC<Props> = ({
           </svg>
         </div>
         <input
+          style={isOpen ? { backgroundColor: "#F0F0F4" } : {}}
           value={itemNumber}
           onChange={(e) => {
             if (e.target.value == "") return;
@@ -100,6 +103,7 @@ const shopCard: React.FC<Props> = ({
             if (!isOpen) handleItemNumberChange(itemNumber + 1);
           }}
           className="w-8 h-8 p-1 rounded-full bg-[rgba(233,233,240,0.6)] cursor-pointer"
+          style={isOpen ? { backgroundColor: "#F0F0F4" } : {}}
         >
           <svg
             viewBox="0 0 24 24"
@@ -136,8 +140,12 @@ const shopCard: React.FC<Props> = ({
         </svg>
       </div>
       <div
+        onClick={() => {
+          scrollLeftHandle();
+          handleDeleteItem();
+        }}
         className="flex justify-center items-center text-white font-semibold cursor-pointer
-      -mr-[195px] -mt-10 w-[140px] h-[175px] bg-red-500"
+      -mr-[195px] -mt-6 w-[140px] h-[175px] bg-red-500"
       >
         Remove
       </div>
