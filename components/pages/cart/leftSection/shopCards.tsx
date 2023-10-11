@@ -1,7 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import ShopCard from "@/components/cards/shopCard";
-import getProducts from "@/utils/getProducts";
 import setProducts from "@/utils/setProducts";
 
 type Product = {
@@ -12,22 +11,12 @@ type Product = {
   count: number;
 };
 
-const shopCards = () => {
-  const [selectedProducts, setSelectedProducts] = useState<Product[]>([]);
+type Props = {
+  selectedProducts: Product[],
+}
 
-  useEffect(() => {
-    const listener = () => {
-      const products = getProducts();
-      setSelectedProducts(products);
-    };
-    window.addEventListener("storage", listener); //!! normalde sadece başka tab'de local storage update olursa fire eder.
-    listener();
-
-    return () => {
-      window.removeEventListener("storage", listener);
-    };
-  }, []);
-
+const shopCards: React.FC<Props> = ({selectedProducts}) => {
+ 
   const handleItemNumberChange = (
     index: number,
     oldCount: number,

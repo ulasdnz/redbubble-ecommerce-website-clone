@@ -28,6 +28,4 @@ export default function setProducts(products: Product[]) {
   }
 
   window.dispatchEvent(new Event("storage"));
-
-  //!! Storage event'ini dispatch etmeyi unutma
 }
