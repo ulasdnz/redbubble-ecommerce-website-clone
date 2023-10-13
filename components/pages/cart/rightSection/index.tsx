@@ -5,14 +5,24 @@ import ShippingChoice from "./shippingChoice";
 import Coupon from "./coupon";
 import OrderSummary from "./orderSummary";
 
-const index = () => {
+type Product = {
+  src: string;
+  title: string;
+  artist: string;
+  price: number;
+  count: number;
+};
+type Props = {
+  products: Product[];
+};
+
+const index: React.FC<Props> = ({ products }) => {
   const [selectedShippingChoice, setSelectedShippingChoice] =
     useState("Standard");
   return (
     <div
-      className="min-h-[685px] w-[400px] p-8 rounded 
-      shadow-[0_1px_1px_-1px_rgba(0,0,0,0.15),0_1px_2px_0_rgba(0,0,0,0.1),0_1px_4px_0_rgba(0,0,0,0.1)] 
-    ml-12 mt-14 "
+      className="w-[400px] p-8 rounded ml-12 mt-14
+      shadow-[0_1px_1px_-1px_rgba(0,0,0,0.15),0_1px_2px_0_rgba(0,0,0,0.1),0_1px_4px_0_rgba(0,0,0,0.1)] "
     >
       <RightHeadline />
       <ShippingChoice
@@ -30,7 +40,7 @@ const index = () => {
         handleClick={() => setSelectedShippingChoice("Express")}
       />
       <Coupon />
-      <OrderSummary />
+      <OrderSummary products={products} />
     </div>
   );
 };

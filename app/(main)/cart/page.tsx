@@ -38,7 +38,7 @@ const page = () => {
         <Discount />
         <ShopCards selectedProducts={selectedProducts} />
       </div>
-      <RightSection />
+      <RightSection products={selectedProducts} />
     </div>
   );
 };
