@@ -1,6 +1,5 @@
 import React from "react";
 import Svg from "../../public/footer/socialMediaSvgs.js";
-import Image from "next/image";
 
 type Props = {
   isSocialMedia: boolean;

@@ -33,7 +33,7 @@ const categories: React.FC<Props> = ({ setSelectedCategory }) => {
       ))}
       <div className="mt-4 text-sm mb-12 ">
         {Data.header.links.map((link, i) => (
-          <div key={i} className=" py-2 px-4 leading-6">{link}</div>
+          <div key={i} className=" py-2 px-4 leading-6">{link.title}</div>
         ))}
       </div>
     </div>

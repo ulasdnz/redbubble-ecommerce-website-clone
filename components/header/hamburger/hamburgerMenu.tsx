@@ -78,7 +78,6 @@ const hamburgerMenu = () => {
           ) : null}
         </div>
       ) : null}
-
       {isOpen ? (
         <div>
           <div className="back"></div>

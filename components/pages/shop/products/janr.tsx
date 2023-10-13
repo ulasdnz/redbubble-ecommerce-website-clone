@@ -51,7 +51,7 @@ const janr: React.FC<Props> = ({ janr }) => {
       >
         {janr.map((item, i) => (
           <div
-          key={i}
+            key={i}
             className="p-[9px] flex justify-center shrink-0 min-w-[92px] rounded mr-4 font-semibold "
             style={{ backgroundColor: item.color }}
           >
@@ -59,7 +59,6 @@ const janr: React.FC<Props> = ({ janr }) => {
           </div>
         ))}
       </div>
-
       <div
         className="absolute p-1 top-[5px] right-[23px] bg-white rounded-full	search_popup_caruosel_arrow 
                       cursor-pointer active:border-[3px] active:border-solid active:border-[#AFA3F2]

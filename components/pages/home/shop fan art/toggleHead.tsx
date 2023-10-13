@@ -37,11 +37,13 @@ const toggleHead: React.FC<Props> = ({ handleToggle, toggle }) => {
           ) : null}
         </a>
       </div>
-      <div className="text-[rgb(255,89,111)] font-semibold leading-[26px] cursor-pointer  pr-4
+      <div
+        className="text-[rgb(255,89,111)] font-semibold leading-[26px] cursor-pointer  pr-4
       
       max-[767px]:hidden
-      ">
-      {toggle?"Shop The Last Unicorn merch": "Shop Borderlands merch"}
+      "
+      >
+        {toggle ? "Shop The Last Unicorn merch" : "Shop Borderlands merch"}
       </div>
     </div>
   );

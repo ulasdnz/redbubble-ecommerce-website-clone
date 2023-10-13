@@ -20,7 +20,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;  
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .hamburgerDetail::before {
   position: absolute;
@@ -315,7 +315,7 @@ body {
   }
 }
 
-.loginSearchLogo::before{
+.loginSearchLogo::before {
 content: "";
 position: absolute;
 top: calc(50% - 16px);

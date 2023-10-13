@@ -52,7 +52,6 @@ const avatars: StaticImageData[] = [
 export const getImages = () => {
   return images;
 };
-
 export const getAvatars = () => {
   return avatars;
 };

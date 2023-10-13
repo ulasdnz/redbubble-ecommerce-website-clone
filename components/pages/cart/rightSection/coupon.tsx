@@ -64,7 +64,8 @@ const Coupon = () => {
         </div>
         <div className="mt-8">
           <div className="mb-4 font-semibold">Member Offers</div>
-          <div className="flex justify-between px-4 py-6 text-sm font-semibold shadow-[0_1px_1px_-1px_rgba(0,0,0,0.15),0_1px_2px_0_rgba(0,0,0,0.1),0_1px_4px_0_rgba(0,0,0,0.1)]">
+          <div className="flex justify-between px-4 py-6 text-sm font-semibold
+           shadow-[0_1px_1px_-1px_rgba(0,0,0,0.15),0_1px_2px_0_rgba(0,0,0,0.1),0_1px_4px_0_rgba(0,0,0,0.1)]">
             <div>Get 20% off your first order</div>
             <div
               className="w-[74px] h-8 flex items-center justify-center

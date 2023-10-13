@@ -15,7 +15,7 @@ const circleFilterItem: React.FC<Props> = ({
   value,
   setValue,
 }) => {
-  const [isOpen, setIsOpen] = useState<boolean>(true); //!! Change this to true
+  const [isOpen, setIsOpen] = useState<boolean>(true);
 
   const itemsClassName = isOpen
     ? "filterItemOpen mt-3"
